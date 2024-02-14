@@ -573,16 +573,21 @@ border-right: 1px solid #b8b8b8;
   background-color: rgba(15, 23, 42, 255);
   margin-top: 2px;
   padding-top: 90px;
+ 
 }
 
 .column-list {
   list-style: none;
   padding: 0;
   margin: 0;
+  line-height: 2rem;
+  
 }
 
 .column-list-item {
   margin-bottom: 5px;
+  font-size: 1rem;
+  
   
 }
 
@@ -617,7 +622,11 @@ border-right: 1px solid #b8b8b8;
   padding-right: -20px; /* Adjust the padding-right to reduce space between columns */
 }
 .footer .column-list{
- margin-left: 50px;
+  line-height: 20px;
+ 
+}
+.footer ul li {
+  margin-bottom: 10px; /* Adjust as needed */
 }
 .footer .column-lists{
   list-style: none;
