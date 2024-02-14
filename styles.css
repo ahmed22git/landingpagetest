@@ -596,7 +596,7 @@ border-right: 1px solid #b8b8b8;
   padding-left: 80px;
   color: #7c8497;
   font-size : 1rem;
-  line-height: 20px;
+  
 }
 
 .footer .column-list-item-main {
@@ -606,7 +606,6 @@ border-right: 1px solid #b8b8b8;
   color: #fff;
   padding-bottom: 0.5rem;
   text-align: justify;
-  line-height: inherit;
 }
 
 .footer .column-list-item-mainss {
