@@ -601,7 +601,7 @@ border-right: 1px solid #b8b8b8;
 
 .footer .column-list-item-main {
   font-family: 'Inter', 'sans-serif';
-  font-size: 1rem;
+  font-size: 1.125rem;
   font-weight: 400;
   color: #fff;
   padding-bottom: 0.5rem;
@@ -611,7 +611,8 @@ border-right: 1px solid #b8b8b8;
 
 .footer .column-list-item-mainss {
   font-family: 'Inter', 'sans-serif';
-  font-size: 14px;
+  font-size: 1.125rem;
+  
   font-weight: 600;
   color: #fff;
   padding-bottom: 25px;
