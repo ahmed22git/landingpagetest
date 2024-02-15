@@ -144,10 +144,12 @@ body{
     color: #3e4148;
     text-align: center;
     padding-bottom: 50px;
+    font-family: 'Inter', 'sans-serif';
 }
 .deals .card-title{
   color: #4c4b50;
   margin-top: 12px;
+  font-family: 'Inter', 'sans-serif';
 }
 .container .gallery {
   width: 120%;
@@ -161,10 +163,12 @@ body{
 }
 .container .imagegallerytxt h2{
   font-size: 30px;
+  font-family: 'Inter', 'sans-serif';
 
 }
 .container .imagegallerytxt p{
   font-size: 15px;
+  font-family: 'Inter', 'sans-serif';
 }
 
 .gallery {
@@ -498,11 +502,13 @@ border-right: 1px solid #b8b8b8;
 .chat-column h2{
   font-size: 28px;
   padding-top: 100px;
+  font-family: 'Inter', 'sans-serif';
   
 }
 .chat-column p{
   font-size: 17px;
   color: #4c4b50;
+  font-family: 'Inter', 'sans-serif';
   
 }
 .chat-column:last-child {
@@ -515,6 +521,7 @@ border-right: 1px solid #b8b8b8;
   padding: 150px; /* Adjust padding for internal spacing */
   font-size: 16px; /* Adjust the font size */
   margin-top: 25px;
+  font-family: 'Inter', 'sans-serif';
   
 }
 
