@@ -55,6 +55,16 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
 }
+.sec-logo{
+  
+}
+.containerimg {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  flex-wrap: wrap; /* Allow items to wrap */
+  height: 110px; /* Adjust the height as desired */
+}
 
 .sec-logo{
   width: 100%;
@@ -63,14 +73,14 @@ body{
 }
 
 .sec-logo .main-img{
-  display: inline-flex;
+  height: 100px;
   padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .sec-logo .main-img .image{
-  padding-right: 50px;
+  padding-right: 35px;
 }
 .sec-logo .main-img img{
   width: 100%;
@@ -79,6 +89,7 @@ body{
 .sec-logo .main-img .image p{
   font-size: 1rem;
   margin-top: 10px;
+  
   font-family: 'Inter', 'sans-serif';
   color: #22252c;
   font-weight: 400;
