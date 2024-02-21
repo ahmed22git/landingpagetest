@@ -57,6 +57,7 @@ body{
 }
 
 .sec-logo{
+  width: 100%;
   background-color: #f7fbfc;
   padding: 0;
 }
@@ -73,14 +74,14 @@ body{
 }
 .sec-logo .main-img img{
   width: 100%;
-  height: 130px;
+  
 }
 .sec-logo .main-img .image p{
-  font-size: 14px;
+  font-size: 1rem;
   margin-top: 10px;
   font-family: 'Inter', 'sans-serif';
-  color: #1f1c1d;
-  font-weight: 600;
+  color: #22252c;
+  font-weight: 400;
 }
 
 
@@ -121,7 +122,7 @@ body{
   width: 42px;
   height: 42px;
   top: 36%;
-  right: -5px;
+  right: -20px;
   background-color: white;
   border-radius: 50%;
   background-image: url(img/left-icon.png);
@@ -162,13 +163,17 @@ body{
 
 }
 .container .imagegallerytxt h2{
-  font-size: 30px;
+  font-size: 2.25rem;
+  font-weight: 700;
   font-family: 'Inter', 'sans-serif';
+  color:#22252c;
 
 }
 .container .imagegallerytxt p{
-  font-size: 15px;
+  font-size: 1.25rem;
+  font-weight: 300;
   font-family: 'Inter', 'sans-serif';
+  color:#22252c;
 }
 
 .gallery {
@@ -177,7 +182,6 @@ body{
   grid-template-rows: repeat(12, 5vw);
   grid-row-gap: 5px;
   grid-column-gap: 20px;
-  
   padding-bottom: -150px;
   
 }
@@ -325,7 +329,7 @@ body{
     width: 42px;
     height: 42px;
     top: 45%;
-    right: -5px;
+    right: -20px;
     background-color: white;
     border-radius: 50%;
     background-image: url(img/left-icon.png);
@@ -344,13 +348,13 @@ body{
   }
   
   .test .txt h2{
-  
-      font-size: 34px;
-      font-weight: 600;
-      color: #3e4148;
-      text-align: center;
-      padding-bottom: 50px;
-      font-family: 'Inter', 'sans-serif';
+    font-size: 2;
+    font-weight: 600;
+    font-family: 'Inter', 'sans-serif';
+    color:#22252c;
+    text-align: center;
+    padding-bottom: 50px;
+      
   }
   .test .card-title{
     color: #4c4b50;
@@ -421,9 +425,9 @@ body{
   background-color: rgb(219 219 219 / 53%);
 }
 .brand .txt h2{
-  font-size: 26px;
+  font-size: 1.75rem;
   font-weight: 600;
-  color: #3e4148;
+  color: #22252c;
   text-align: center;
   font-family: 'Inter', 'sans-serif';
   padding-top: 50px;
@@ -434,27 +438,42 @@ body{
 .brand .txt p{
   font-family: 'Inter', 'sans-serif';
   text-align: center;
+  font-weight: 300;
   justify-content: center;
   padding-bottom: 30px;
-  font-size: 15px;
-  color: #aeb0b3;
+  font-size: 1.25rem;
+  color: #22252c;
   display: block;
-    margin: 0 auto; /* This centers the block horizontally */
-    text-align: center
+  margin: 0 auto; /* This centers the block horizontally */
+  text-align: center
   
+}
+.brand .jss39{
+    fill: #27a6ff;
+    flex: 0 0 48px;
+    width: 48px;
+    height: 48px;
+    /* display: block;
+    margin-bottom: 1rem; */
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    
 }
 
 .brand .card-title{
   font-family: 'Inter', 'sans-serif';
   font-size: 1.125rem;
+  font-weight: 600;
   margin-top: 5px;
-  color: #3e4148;
+  color: #22252c;
 }
 .brand .card-text{
   font-family: 'Inter', 'sans-serif';
   font-size: 1rem;
+  font-weight: 400;
   margin-top: 10px;
-  color: #888888;
+  color: #22252c;
 }
 .brand .container .row{
   padding: 40px 0 40px 0;
@@ -500,14 +519,18 @@ border-right: 1px solid #b8b8b8;
   
 }
 .chat-column h2{
-  font-size: 28px;
+  font-size: 1.875rem;
+  font-weight: 600;
   padding-top: 100px;
   font-family: 'Inter', 'sans-serif';
+  margin-bottom: 0.75rem;
   
 }
 .chat-column p{
-  font-size: 17px;
-  color: #4c4b50;
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #22252c;
+  margin-bottom: 2rem;
   font-family: 'Inter', 'sans-serif';
   
 }
@@ -520,7 +543,7 @@ border-right: 1px solid #b8b8b8;
   height: 40px; /* Set the desired height */
   padding: 150px; /* Adjust padding for internal spacing */
   font-size: 16px; /* Adjust the font size */
-  margin-top: 25px;
+  
   font-family: 'Inter', 'sans-serif';
   
 }
@@ -571,8 +594,8 @@ border-right: 1px solid #b8b8b8;
   display: inline-block;
 }
 .rockstar-logo img {
-  width: 80px; /* Set the desired width */
-  height: 80px; /* Maintain aspect ratio */
+  width: 6rem; /* Set the desired width */
+  height: 6rem; /* Maintain aspect ratio */
   border-radius: 50%;
   margin-bottom: -120px;
 }
@@ -593,23 +616,19 @@ border-right: 1px solid #b8b8b8;
   padding: 0; /* Remove default padding */
 }
 
-.column-list-item {
-  margin-bottom: 5px;
-  font-size: 1rem;
-}
 
 .footer .column-list {
   font-family: 'Inter', 'sans-serif';
-  color: #7c8497;
+  color: #E5E7EB;
   font-size: 1rem;
+  font-weight: 200;
 }
 
 .footer .column-list-item-main {
   font-family: 'Inter', 'sans-serif';
   font-size: 1.125rem;
-  font-weight: 400;
+  font-weight: 600;
   color: #fff;
-  padding-bottom: 0.5rem;
   text-align: justify;
 }
 
@@ -618,17 +637,34 @@ border-right: 1px solid #b8b8b8;
   font-size: 1.125rem;
   font-weight: 600;
   color: #fff;
-  padding-bottom: 25px;
-  line-height: 30px;
+  
 }
+
+
 
 .footer ul li {
   margin-bottom: 10px; /* Adjust as needed */
   flex: 1; /* Distribute equal space */
   text-align: left; /* Center the content horizontally */
+ 
 }
 
+.column-list-itemspecial .container {
+  display: flex;
+  
+   /* Vertically center align items */
+}
 
+.column-list-itemspecial .image-and-text {
+  display: flex;
+  align-items: center; /* Vertically center align items */
+  line-height: 1.5rem;
+}
+
+.column-list-itemspecial .image-and-text img {
+  margin-right: 10px;
+  /* Optional: Add spacing between the image and text */
+}
 
 
 
