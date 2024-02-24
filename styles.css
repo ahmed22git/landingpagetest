@@ -94,7 +94,51 @@ body{
   color: #22252c;
   font-weight: 400;
 }
+.deals .btn{
+border: 1px solid #d1d3d6;
+opacity: 0.7;
+transform: translateY(-50%);
+border-radius: 50%;
+background-color: #ffffff;
+position: absolute;
+content: "";
+width: 50px;
+height: 50px;
+top: 36%;
+left: -20px;
+background-color: white;
+z-index: 1;
+display: flex; /* Added */
+justify-content: center; /* Added */
+align-items: center;
+}
+.deals .btn-icon{
+  width: 28px; /* Adjust size as needed */
+  height: 28px; /* Adjust size as needed */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+}
+.deals .btn-right{
+  border: 1px solid #d1d3d6;
+opacity: 0.7;
+transform: translateY(-50%);
+border-radius: 50%;
+background-color: #ffffff;
+position: absolute;
+content: "";
+width: 50px;
+height: 50px;
+top: 36%;
+right: -20px;
+background-color: white;
+z-index: 1;
+display: flex; /* Added */
+justify-content: center; /* Added */
+align-items: center;
 
+}
 
 .deals{
   margin:0;
@@ -112,7 +156,7 @@ body{
 .deals .container .row{
   position: relative;
 }
-.deals .container .row::before{
+/* .deals .container .row::before{
   position: absolute;
   content: "";
   width: 42px;
@@ -141,7 +185,7 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   transform: scaleX(-1);
-}
+} */
 
 .deals .card{
   border: none;
