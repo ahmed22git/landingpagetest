@@ -34,12 +34,15 @@ a{
     flex-wrap: wrap;
 }
 
-
-
-.carousel-control-prev{
-    color: black;
-    background-color: black;
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  filter: invert(1);
 }
+.nav-pills .nav-link {
+    border-radius: 0%;
+}
+
+
 
 .tab-content>.active {
     display: block;
