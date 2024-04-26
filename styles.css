@@ -8,6 +8,28 @@ body{
   color: #22252c;
   
 }
+.centered-content {
+  display: flex;
+  align-items: center;
+}
+.centered-content .login {
+  display: flex;
+  align-items: center; /* Vertical alignment */
+  margin-right: 30px; /* Adjust the value as needed */
+}
+.centered-content .cart {
+  display: flex;
+  align-items: center; /* Vertical alignment */
+  margin-right: 15px; /* Adjust the value as needed */
+}
+
+.centered-content .login i {
+  margin-right: 10px; /* Adjust the value as needed */
+}
+.centered-content .cart i {
+  margin-right: 10px; /* Adjust the value as needed */
+}
+
 .cart{
   text-decoration: none;
   font-family: 'Inter', 'sans-serif';
@@ -24,6 +46,7 @@ body{
 
 .header-search .twitter-typeahead {
   width: 374px;
+  margin-right: -150px;
 }
 
 .nav {
