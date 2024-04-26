@@ -228,6 +228,7 @@ align-items: center;
   font-family: 'Inter', 'sans-serif';
   text-align: center;
   padding-top: 70px;
+  margin-top: -20px;
 
 }
 .container .imagegallerytxt h2{
