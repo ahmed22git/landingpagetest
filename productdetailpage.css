@@ -55,14 +55,51 @@ a{
 .pricecalculator .Size{
     font-size: 90px;
 }
-.card .btn{
-    width: 100%;
-    height: 60px;
+.card-body {
+    margin-top: 10px;
+    margin-bottom: -20px;
+    
 }
 
-#upload{
+
+
+.btn-custom-width {
+    width: 250px;
+    height: 60px;
     
+   
+     /* Adjust margin to make buttons close */
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
 }
+
+#upload {
+    margin-left: 40px;
+   
+}
+
 #design {
+    margin-right: 40px;
     
+   
+    /* Add margin between buttons if needed */
+}
+ 
+
+#designcollection{
+    margin-top: 20px;
+
+}
+#estimatecustom{
+    width: 200px;
+    height: 50px;
+    margin-right: 50px;
+
+}
+#zipcode{
+    width: 200px;
+    height: 50px;
+    margin-left: 50px;
+
 }
