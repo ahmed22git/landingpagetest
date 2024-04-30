@@ -2,27 +2,116 @@ body{
     font-family: 'Inter', 'sans-serif';
     
   }
+  .nav {
+    background-color: rgba(15,23,42,255);
+  }
+  
+  .nav .menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0 20px 0 ; 
+  }
+  .nav .menu ul li{
+  
+    font-family: 'Inter', 'sans-serif';
+    display: inline;
+    margin-right: 40px;
+    color: white;
+    font-weight: 600;
+  }
+  /* .nav .menu ul.special-list li:nth-child(2),li:nth-child(4) {
+    border-left: 1px solid #676767;
+    border-right: 1px solid #676767;
+    padding: 0px 30px 0 30px;
+  }
+  .nav .menu ul li:nth-child(6){
+  
+    border-left: 1px solid #676767;
+    padding: 0px 0 0 30px;
+  } */
+  .nav .menu ul.special-list .item-with-border {
+    border-left: 1px solid #676767;
+    border-right: 1px solid #676767;
+    padding: 0px 30px 0 30px;
+  }
+  .nav .menu ul.special-list .item-with-borders {
+    border-left: 1px solid #676767;
+    
+    padding: 0px 0 0 30px;
+  
+  }
+  
+  .nav .menu ul.special-list .item-with-border:nth-last-child(1) {
+    border-left: 1px solid #676767;
+    padding: 0px 0 0 30px;
+  }
+  .login{
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Inter', 'sans-serif';
+    color: #22252c;
+    
+  }
+  .centered-content {
+    display: flex;
+    align-items: center;
+  }
+  .centered-content .login {
+    display: flex;
+    align-items: center; 
+    margin-right: 30px; 
+  }
+  .centered-content .cart {
+    display: flex;
+    align-items: center; 
+    margin-right: 15px; 
+  }
+  
+  .centered-content .login i {
+    margin-right: 10px; 
+  }
+  .centered-content .cart i {
+    margin-right: 10px; 
+  }
+  
+  .cart{
+    text-decoration: none;
+    font-family: 'Inter', 'sans-serif';
+    font-size: 16px;
+    color: #22252c;
+  }
+  .searchicon{
+    position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: 340px; 
+          z-index: 1; 
+  }
+  
+  .header-search .twitter-typeahead {
+    width: 374px;
+    margin-right: -150px;
+  }
 
   #heading {
-    font-size: 26px; /* Adjust the font size as desired */
+    font-size: 26px; 
+    font-weight: 500;
+    margin-top: 15px;
 }
 #secondary{
     font-size: 65%;
 
 }
 
-.line {
-    border: none;
-    border-top: 1px solid #dee2e6;
 
-}
 .breadcrumb {
-    background-color: transparent; /* Set the background color to transparent */
+    background-color: transparent; 
     font-size: 16px;
     list-style: none;
     text-decoration: none;
 }
-/* Increase specificity */
+
 a:hover {
     text-decoration: none !important;
 }
@@ -51,9 +140,13 @@ a{
 }
 .form-group{
     padding: 1.25rem;
+    border: solid 1px #dee2e6;
 }
 .pricecalculator .Size{
     font-size: 90px;
+}
+#cardd{
+    background-color: #10172A;
 }
 .card-body {
     margin-top: 10px;
@@ -66,24 +159,25 @@ a{
 .btn-custom-width {
     width: 250px;
     height: 60px;
-    
-   
-     /* Adjust margin to make buttons close */
-    display: flex; /* Enable flexbox */
-    justify-content: center; /* Center text horizontally */
-    align-items: center; /* Center text vertically */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
 }
 
 #upload {
     margin-left: 40px;
+    background-color: #F9F136;
+    border-radius: 0;
+    border: 0;
    
 }
 
 #design {
     margin-right: 40px;
+    background-color: #F9F136;
+    border-radius: 0;
+    border: 0;
     
-   
-    /* Add margin between buttons if needed */
 }
  
 
@@ -93,13 +187,33 @@ a{
 }
 #estimatecustom{
     width: 200px;
-    height: 50px;
-    margin-right: 50px;
+    height: 45px;
+    margin-right: 20px;
 
 }
 #zipcode{
     width: 200px;
-    height: 50px;
-    margin-left: 50px;
+    height: 45px;
+    margin-left: 28px;
+    
 
+}
+
+#text {
+    padding-left: 40px;
+    margin-top: 10px;
+}
+
+
+#text2{
+    padding-left: 40px;
+    margin-top: 10px;
+
+}
+#textline{
+   
+    
+    margin-left: 40px;
+    width: 420px;
+    border-bottom: 1px solid  #dee2e6;
 }
