@@ -25,6 +25,7 @@
     <style>
         body {
             font-family: 'Inter';
+            color: #A9A9A9;
             
             
         }
@@ -132,7 +133,7 @@
             padding-right: 185px;
         }
         .btn-within-text{
-            
+            width: 115px;
             margin-left: 25px;
         }
         .btn-primary {
@@ -150,6 +151,24 @@
         .btn-danger {
             width: 115px; /* Set width for the Danger button */
         }
+        .btn-check:checked + .btn-outline-primary {
+    background-color: #007bff; /* Primary color for checked buttons */
+    border-color: #007bff; /* Border color for checked buttons */
+    color: #fff; /* Text color for checked buttons */
+}
+
+.btn-check:not(:checked) + .btn-outline-primary {
+    background-color: #fff; /* Grey color for unchecked buttons */
+    border-color: #CED4DA; /* Border color for unchecked buttons */
+    color: #A9A9A9; /* Text color for unchecked buttons */
+}
+.btn-outline-primary{
+            height: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding:15px;
+}
         
         
 
@@ -320,7 +339,7 @@
 
         <div>
             <h6>ACCIDENT TYPE</h6>
-            <select class="form-select accidenttype ">
+            <select class="form-select accidenttype" style="color: #A9A9A9;">
                 <option selected value="">Commercial</option>
                 <option selected value="">Dynamic</option>
                 <option selected value="">Commercial</option>
@@ -340,7 +359,7 @@
         
         <div>
             <h6>REFFERED FROM</h6>
-            <select class="form-select refferedfrom">
+            <select class="form-select refferedfrom" style="color: #A9A9A9;">
                 <option selected value="">REFFERED FROM NAME #1</option>
                 <option selected value="">REFFERED FROM NAME #2</option>
                 <option selected value="">REFFERED FROM NAME #3</option>
@@ -366,7 +385,7 @@
 
          <div>
             <h6>ATTORNEY</h6>
-            <select class="form-select attorney">
+            <select class="form-select attorney" style="color: #A9A9A9;">
                 <option selected value="">ATTORNEY NAME #1</option>
                 <option selected value="">ATTORNEY NAME #2</option>
                 <option selected value="">ATTORNEY NAME #3</option>
@@ -379,10 +398,10 @@
 
         <div>
 
-        <h6>L.O.P LETTERS</h6>
-        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+        <h6>LOP LETTERS</h6>
+        <div class="btn-group" role="group" aria-label="Basic radio toggle button group" >
             <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-            <label class="btn btn-outline-primary" for="btnradio1">M D</label>
+            <label class="btn btn-outline-primary" for="btnradio1" >M D</label>
           
             <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
             <label class="btn btn-outline-primary" for="btnradio2">Physical Therapy </label>
@@ -406,7 +425,7 @@
 
         <div>
            <h6>MD CONSULT</h6>
-           <select class="form-select attorney">
+           <select class="form-select attorney" style="color: #A9A9A9;">
                <option selected value="">BUSSINESS NAME / DR. NAME</option>
                <option selected value="">BUSSINESS NAME / DR. NAME</option>
                <option selected value="">BUSSINESS NAME / DR. NAME</option>
@@ -440,7 +459,7 @@
 
     <div>
         <h6>AFFIDAVIT REQUEST</h6>
-        <select class="form-select accidenttype">
+        <select class="form-select accidenttype" style="color: #A9A9A9;">
             <option selected value="">YES</option>
             <option selected value="">NO</option>
             <option selected value="">Commercial</option>
@@ -455,16 +474,15 @@
         <h6 id="lopletters">LOP LETTERS</h6>
 
         
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault"></label>
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="padding:8px; margin-left: 50px;">
+            
 
-            <span class="btn-within-text">
-                <button type="button" class="btn btn-primary btn-sm">Schedule date</button>
-            </span>
+            <button type="button" class="btn btn-primary" style="width: 150px; margin-left: 40px;">Schedule date</button>
+           
 
-            <span class="btn-within-text">
-                <button type="button" class="btn btn-secondary btn-sm">History</button>
-            </span>
+            
+            <button type="button" class="btn btn-secondary">History</button>
+            
     </div>
     
 </div>
