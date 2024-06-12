@@ -65,11 +65,20 @@
             margin-right: 185px;
             padding-right: 185px;
         }
-        input[type="date"]::-webkit-calendar-picker-indicator {
+        /* input[type="date"]::-webkit-calendar-picker-indicator {
              color: rgba(0, 0, 0, 0);
              opacity: 0;
              
-        }
+        } */
+        input[type="date"]::-webkit-calendar-picker-indicator {
+    background-image: url('/img/date.png'); /* Replace 'path_to_your_logo.png' with the path to your downloaded logo */
+    background-size: contain; /* Ensure the logo fits within the indicator */
+    background-repeat: no-repeat; /* Prevent the logo from repeating */
+    width: 16px; /* Adjust the width of the indicator to fit the logo */
+    height: 16px; /* Adjust the height of the indicator to fit the logo */
+    opacity: 1; /* Set opacity to 1 to make the logo visible */
+}
+
         .zip{
             width: 485px;
         }
@@ -465,7 +474,7 @@
 
     <div class="button-container">
         <button type="button" class="btn btn-primary">Upload</button>
-        <button type="button" class="btn btn-secondary">Print/button>
+        <button type="button" class="btn btn-secondary">Print</button>
         <button type="button" class="btn btn-success">Save</button>
         <button type="button" class="btn btn-danger">Cancel</button>
 
