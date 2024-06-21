@@ -1,33 +1,41 @@
 body{
   font-family: 'Inter', 'sans-serif';
 }
+
+/* TOP BAR */
+
 .login{
   text-decoration: none;
   font-size: 16px;
   font-family: 'Inter', 'sans-serif';
   color: #22252c;
+  margin-top: 15px;
   
 }
+.header-search {
+  margin-top: 15px; 
+}
+
 .centered-content {
   display: flex;
   align-items: center;
 }
 .centered-content .login {
   display: flex;
-  align-items: center; /* Vertical alignment */
-  margin-right: 30px; /* Adjust the value as needed */
+  align-items: center; 
+  margin-right: 30px; 
 }
 .centered-content .cart {
   display: flex;
-  align-items: center; /* Vertical alignment */
-  margin-right: 15px; /* Adjust the value as needed */
+  align-items: center; 
+  margin-right: 15px; 
 }
 
 .centered-content .login i {
-  margin-right: 10px; /* Adjust the value as needed */
+  margin-right: 10px; 
 }
 .centered-content .cart i {
-  margin-right: 10px; /* Adjust the value as needed */
+  margin-right: 10px; 
 }
 
 .cart{
@@ -35,19 +43,22 @@ body{
   font-family: 'Inter', 'sans-serif';
   font-size: 16px;
   color: #22252c;
+  margin-top: 15px;
 }
 .searchicon{
   position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        left: 340px; /* Adjust this value as needed */
-        z-index: 1; /* Ensure the icon appears above the input field */
+        left: 340px; 
+        z-index: 1; 
 }
 
 .header-search .twitter-typeahead {
   width: 374px;
   margin-right: -150px;
 }
+
+/* NAVBAR */
 
 .nav {
   background-color: rgba(15,23,42,255);
@@ -67,16 +78,7 @@ body{
   color: white;
   font-weight: 600;
 }
-/* .nav .menu ul.special-list li:nth-child(2),li:nth-child(4) {
-  border-left: 1px solid #676767;
-  border-right: 1px solid #676767;
-  padding: 0px 30px 0 30px;
-}
-.nav .menu ul li:nth-child(6){
 
-  border-left: 1px solid #676767;
-  padding: 0px 0 0 30px;
-} */
 .nav .menu ul.special-list .item-with-border {
   border-left: 1px solid #676767;
   border-right: 1px solid #676767;
@@ -90,10 +92,12 @@ body{
 }
 
 .nav .menu ul.special-list .item-with-border:nth-last-child(1) {
-  /* Apply styles to the last item with a border */
   border-left: 1px solid #676767;
   padding: 0px 0 0 30px;
 }
+
+/* BANNER */
+
 .banner{
   width: 100%;
   height: 500px;
@@ -102,15 +106,15 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
 }
-.sec-logo{
-  
-}
+
+/* LOGOLIST */
+
 .containerimg {
   display: flex;
-  justify-content: center; /* Center items horizontally */
-  align-items: center; /* Center items vertically */
-  flex-wrap: wrap; /* Allow items to wrap */
-  height: 110px; /* Adjust the height as desired */
+  justify-content: center; 
+  align-items: center; 
+  flex-wrap: wrap; 
+  height: 110px; 
 }
 
 .sec-logo{
@@ -141,6 +145,9 @@ body{
   color: #22252c;
   font-weight: 400;
 }
+
+/* HOT DEAL CONTAINER BTN */
+
 .deals .btn{
 border: 1px solid #d1d3d6;
 opacity: 0.7;
@@ -155,13 +162,13 @@ top: 40%;
 left: -14px;
 background-color: white;
 z-index: 1;
-display: flex; /* Added */
-justify-content: center; /* Added */
+display: flex; 
+justify-content: center;
 align-items: center;
 }
 .deals .btn-icon{
-  width: 28px; /* Adjust size as needed */
-  height: 28px; /* Adjust size as needed */
+  width: 28px; 
+  height: 28px; 
   position: absolute;
   top: 50%;
   left: 50%;
@@ -181,8 +188,8 @@ top: 40%;
 right: -14px;
 background-color: white;
 z-index: 1;
-display: flex; /* Added */
-justify-content: center; /* Added */
+display: flex; 
+justify-content: center; 
 align-items: center;
 
 }
@@ -220,6 +227,10 @@ align-items: center;
   font-size: 1.25rem;
   font-weight: 300;
 }
+
+/* 
+CUSTOMER IMAGE GALLERY */
+
 .container .gallery {
   width: 120%;
   margin: 3rem auto; 
@@ -359,6 +370,11 @@ align-items: center;
     grid-row-start:10;
     grid-row-end: 13;
   }
+
+
+  /* CUSTOMER TESTEMONIALS */
+
+
   .test{
     margin:0;
     margin-top: 0px;
@@ -374,7 +390,7 @@ align-items: center;
       background-color: #ffffff;
       position: absolute;
       left: -26px;
-      top: 50%;/* Adjust as needed */
+      top: 50%;
       transform: translateY(-50%);
       width: 50px;
       height: 50px;
@@ -384,8 +400,8 @@ align-items: center;
       align-items: center;
   }
   .test .btn-icon{
-    width: 28px; /* Adjust size as needed */
-  height: 28px; /* Adjust size as needed */
+    width: 28px; 
+  height: 28px; 
   position: absolute;
   top: 50%;
   left: 50%;
@@ -400,7 +416,7 @@ align-items: center;
     background-color: #ffffff;
     position: absolute;
     right: -26px;
-    top: 50%;/* Adjust as needed */
+    top: 50%;
     transform: translateY(-50%);
     width: 50px;
     height: 50px;
@@ -409,15 +425,7 @@ align-items: center;
     justify-content: center;
     align-items: center;
 }
-  
-      
-  
-  /* .deals + .deals {
-    margin-top: 20px; 
-    
-  } */
- 
-  .test .card{
+.test .card{
     border: none;
     text-align: center;
     margin-top: -20px;
@@ -468,20 +476,22 @@ align-items: center;
     font-size: 12px;
     color:#676767;
     margin: 0px;
-     /* Optional: Align elements vertically in the middle */
   }
   .test p {
    margin-bottom: 10px;
   }
 
+  /* VIDEO CONTAINER */
+
+
   .video {
     position: relative;
   }
-  
+
   .video-container {
     position: relative;
     width: 100%;
-    max-width: 1300px; /* Adjust the maximum width as needed */
+    max-width: 1300px; 
     margin: auto;
     padding-right: 10px;
   }
@@ -499,7 +509,8 @@ align-items: center;
     transform: translate(-50%, -50%);
     cursor: pointer;
   }
-  
+
+  /* SERVICES CONTAINER */
 
 
 .brand{
@@ -526,7 +537,7 @@ align-items: center;
   font-size: 1.125rem;
   color: #22252c;
   display: block;
-  margin: 0 auto; /* This centers the block horizontally */
+  margin: 0 auto; 
   text-align: center
   
 }
@@ -535,8 +546,6 @@ align-items: center;
     flex: 0 0 48px;
     width: 48px;
     height: 48px;
-    /* display: block;
-    margin-bottom: 1rem; */
     justify-content: center;
     text-align: center;
     margin: 0 auto;
@@ -583,6 +592,10 @@ border-right: 1px solid #b8b8b8;
   width: 20%;
   margin: 0 auto;
 }
+
+
+/* CHAT WITH US CONTAINER  */
+
 .chatwithus{
   padding-bottom: 50px;
 }
@@ -595,8 +608,8 @@ border-right: 1px solid #b8b8b8;
 
 .chat-column {
   flex: 1;
-  max-width: 48%; /* Adjust the width as needed */
-  margin-right: 2%; /* Adjust the gap between columns */
+  max-width: 48%; 
+  margin-right: 2%;
   font-family: 'Inter', 'sans-serif';
   
   
@@ -618,21 +631,20 @@ border-right: 1px solid #b8b8b8;
   
 }
 .chat-column:last-child {
-  margin-right: 0; /* Remove right margin for the last column */
+  margin-right: 0; 
 }
 .btn{
-  /* Adjust the properties to enlarge the button */
-  width: 170px; /* Set the desired width */
-  height: 40px; /* Set the desired height */
-  padding: 150px; /* Adjust padding for internal spacing */
-  font-size: 16px; /* Adjust the font size */
+
+  width: 170px; 
+  height: 40px; 
+  padding: 150px; 
+  font-size: 16px; 
   
   font-family: 'Inter', 'sans-serif';
   
 }
 
-
-
+/* FOOTER */
 
 .footer {
   background-color: #333;
@@ -678,8 +690,8 @@ border-right: 1px solid #b8b8b8;
 }
 
 .rockstar-logo img {
-  width: 6rem; /* Set the desired width */
-  height: 6rem; /* Maintain aspect ratio */
+  width: 6rem; 
+  height: 6rem; 
   border-radius: 50%;
   margin-bottom: -120px;
 }
@@ -717,31 +729,31 @@ border-right: 1px solid #b8b8b8;
 }
 
 .footer ul li {
-  /* Adjust as needed */
-  flex: 1; /* Distribute equal space */
-  text-align: left; /* Center the content horizontally */
+  
+  flex: 1; 
+  text-align: left; 
 }
 
 .footer .column-list-itemspecial {
   margin-top: 5px;
-  line-height: 1.5rem; /* Adjust line height as needed */
+  line-height: 1.5rem; 
 }
 
 .column-list-itemspecial .image-and-text {
   gap: 0.5rem;
   display: flex;
-  align-items: center; /* Vertically center align items */
+  align-items: center; 
   text-decoration: none;
   --tw-text-opacity: 1;
   color: rgb(148 163 184 / var(--tw-text-opacity));
 }
 .footer .column-list-itemspecials {
-  line-height: 2.5rem; /* Adjust line height as needed */
+  line-height: 2.5rem; 
 }
 .column-list-itemspecials .image-and-text {
   gap: 0.5rem;
   display: flex;
-  align-items: center; /* Vertically center align items */
+  align-items: center; 
   text-decoration: none;
   --tw-text-opacity: 1;
   color: rgb(148 163 184 / var(--tw-text-opacity));
@@ -749,9 +761,8 @@ border-right: 1px solid #b8b8b8;
 
 .social-media-icons img {
   margin-top: 80px;
-  margin-right: 15px; /* Adjust the value to set the desired gap */
+  margin-right: 15px; 
 }
-
 
 
 
