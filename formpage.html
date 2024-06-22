@@ -13,366 +13,925 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     
- 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg" id="custom-navbar">
         <div class="container">
-          <div class="navbar-nav me-auto">
-            <a class="nav-link active" aria-current="page" href="#">File</a>
-            <a class="nav-link" href="#">Edit</a>
-            <a class="nav-link" href="#">Help</a>
-          </div>
-          <a class="navbar-brand mx-auto" href="#">New Case</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+            <div class="navbar-nav me-auto">
+                <a class="nav-link active" aria-current="page" href="#">File</a>
+                <a class="nav-link" href="#">Edit</a>
+                <a class="nav-link" href="#">Help</a>
+            </div>
+            <a class="navbar-brand mx-auto" href="#">New Case</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
         </div>
-      </nav>
+    </nav>
     
     <div class="container mt-5 id">
-
-        <h2>ID # 001</h2>
+        <div class="row">
+            <div class="col-12 ps-5">
+                <p id="id-text">ID # 001</p>
+            </div>
+        </div>
     </div>
+    
     <div class="container detail-box">
         <div class="row">
-          <div class="col-md-3">
-            <div class="form-floating mb-3 mt-3 name">
-              <input type="text" class="form-control" id="floatingFirstName" placeholder="First Name">
-              <label for="floatingFirstName">First Name</label>
+            <div class="col-6 ps-5 mt-3">
+                <div class="form-floating mb-3 mt-3">
+                    <input type="text" class="form-control" id="floatingFirstName" placeholder="">
+                    <label for="floatingFirstName">Full Name</label>
+                </div>
             </div>
-          </div>
-          <div class="col-md-3">
-            <div class="form-floating mb-3 mt-3 name">
-              <input type="text" class="form-control" id="floatingLastName" placeholder="Last Name">
-              <label for="floatingLastName">Last Name</label>
+            <div class="col-6 pe-5 mt-3">
+                <div class="form-floating mb-3 mt-3">
+                    <input type="date" class="form-control">
+                    <label>DOB</label>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-
-    <!-- <div class="container mt-5 d-flex justify-content-center">
-
-      <div class="form-floating mb-3 name namepadding">
-        <input type="text" class="form-control" id="floatingInput" placeholder="First Name">
-        <label for="floatingInput">First Name</label>
-      </div>
-      <div class="form-floating lastname">
-        <input type="text" class="form-control" id="floatingPassword" placeholder="Last Name">
-        <label for="floatingPassword">Last Name</label>
-      </div>
-
-    </div>
-
-
-    <div class="container d-flex justify-content-center">
-
-        
-        <div class="form-floating birthday">
-            <input type="date" class="form-control">
-
-            <label>DOB</label>
-            
+    
+        <div class="row">
+            <div class="col-12 ps-5 pe-5">
+                <div class="form-floating mb-3 mt-3">
+                    <input type="text" class="form-control" id="floatingFirstName" placeholder="">
+                    <label for="floatingFirstName">Address</label>
+                </div>
+            </div>
         </div>
-
+    
+        <div class="row">
+            <div class="col-12 ps-5 pe-5">
+                <div class="form-floating mb-3 mt-3">
+                    <input type="text" class="form-control" id="floatingFirstName" placeholder="">
+                    <label for="floatingFirstName">Apartment, suite, etc</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="col-4 ps-5">
+                <div class="form-floating mb-3 mt-3">
+                    <input type="text" class="form-control" id="floatingFirstName" placeholder="">
+                    <label for="floatingFirstName">City</label>
+                </div>
+            </div>
+    
+            <div class="col-4">
+                <div class="form-floating mb-3 mt-3">
+                    <input type="text" class="form-control" id="floatingFirstName" placeholder="">
+                    <label for="floatingFirstName">State</label>
+                </div>
+            </div>
+    
+            <div class="col-4 pe-5">
+                <div class="form-floating mb-3 mt-3">
+                    <input type="text" class="form-control" id="floatingFirstName" placeholder="">
+                    <label for="floatingFirstName">Zip</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="col-6 ps-5">
+                <div class="form-floating mb-3 mt-3">
+                    <input type="tel" class="form-control focus-ring focus-ring-secondary" id="floatingFirstName" placeholder="">
+                    <label for="floatingFirstName">Telephone</label>
+                </div>
+            </div>
+    
+            <div class="col-6 pe-5">
+                <div class="form-floating mb-5 mt-3">
+                    <input type="email" class="form-control" id="floatingFirstName" placeholder="">
+                    <label for="floatingFirstName">Email</label>
+                </div>
+            </div>
+        </div>
     </div>
     
-    
 
-    <div class="container mt-5 d-flex justify-content-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mt-4 ps-5 heading">
+                <p>CASE STATUS</p>
 
-        <div class="line"></div>
-    </div>
-
-    <div class="container mt-5 d-flex justify-content-center">
-
-        
-        <div class="form-floating mb-3 address">
-            <input type="text" class="form-control" placeholder="Address">
-            <label for="floatingPassword">Address</label>
-        </div>
-
-    </div>
-
-    <div class="container d-flex justify-content-center">
-
-        
-        <div class="form-floating state">
-            <input type="text" class="form-control" placeholder="State">
-            <label for="floatingPassword">State</label>
-        </div>
-
-    </div>
-
-    <div class="container mt-3 d-flex justify-content-center">
-
-        
-        <div class="form-floating mb-3 name namepadding">
-            <input type="text" class="form-control" id="floatingInput" placeholder="First Name">
-            <label for="floatingInput">City</label>
-          </div>
-          <div class="form-floating lastname">
-            <input type="text" class="form-control" id="floatingPassword" placeholder="Last Name">
-            <label for="floatingPassword">Zip</label>
-          </div>
-
-    </div>
-
-    <div class="container d-flex justify-content-center">
-
-        
-        <div class="form-floating tel">
-            <input type="text" class="form-control" placeholder="Telephone">
-            <label for="floatingPassword">Telephone</label>
-        </div>
-
-    </div>
-
-    <div class="container mt-3 d-flex justify-content-center">
-
-        
-        <div class="form-floating email">
-            <input type="text" class="form-control" placeholder="Email">
-            <label for="floatingPassword">Enter Email</label>
-        </div>
-
-    </div>
-    <div class="container mt-5 d-flex justify-content-center">
-
-        <div class="line"></div>
-    </div>
-
-
-    <div class="container mt-5 d-flex justify-content-center">
-
-        <h6 id="headingcasestatus">CASE STATUS</h6>
-    </div>
-
-    <div class="container d-flex justify-content-center">
-
-            
-            <select class="form-select lg-3 casestatus" aria-label="Default select example" id="colorSelect">
-              <option selected value="">Open Case</option>
-              <option value="1">Close Case</option>
-              
-              
-            </select>
-          
-          
-          
-          <script>
-            const selectElement = document.getElementById('colorSelect');
-            selectElement.addEventListener('click', function() {
-            
-        });
-
-
-            selectElement.addEventListener('change', function() {
                 
-            if (this.value === '1') {
-            this.classList.remove('bg-green');
-            this.classList.add('bg-red');
-        }    else {
-            this.classList.add('bg-green');
-            this.classList.remove('bg-red');
-        }
-        });
-
-
-
-          </script>
+            </div>
+        </div>
     </div>
 
-    <div class="container mt-5 d-flex justify-content-center">
+    <div class="container ps-5">
 
-        <div class="line"></div>
-    </div>
-
-    <div class="container mt-5 d-flex justify-content-center">
-
-        
-        <div class="form-floating mb-3 dateofaccident">
-            <h6>DATE OF ACCIDENT</h6>
-            <input type="date" class="form-control" id="floatingInput">
-            <label for="floatingInput"></label>
-        </div>
-
-        <div>
-            <h6>ACCIDENT TYPE</h6>
-            <select class="form-select accidenttype" style="color: #A9A9A9;">
-                <option selected value="">Commercial</option>
-                <option selected value="">Dynamic</option>
-                <option selected value="">Commercial</option>
-            </select>
-        </div>
-          
-         
-
-    </div>
-
-
-
-
-
-    <div class="container mt-3 d-flex justify-content-center">
-
-        
-        <div>
-            <h6>REFFERED FROM</h6>
-            <select class="form-select refferedfrom" style="color: #A9A9A9;">
-                <option selected value="">REFFERED FROM NAME #1</option>
-                <option selected value="">REFFERED FROM NAME #2</option>
-                <option selected value="">REFFERED FROM NAME #3</option>
-            </select>
-        </div>
-
-        <div class="form-floating refdate">
-            <h6>REF. DATE</h6>
-            <input type="date" class="form-control" id="floatingInput" placeholder="First Name">
-            <label for="floatingInput"></label>
             
-        </div>  
+        <select class="form-select lg-3 casestatus" aria-label="Default select example" id="colorSelect">
+          <option selected value="">Open Case</option>
+          <option value="1">Close Case</option>
+          
+          
+        </select>
+
+      <script>
+        const selectElement = document.getElementById('colorSelect');
+        selectElement.addEventListener('click', function() {
+        
+    });
+
+
+        selectElement.addEventListener('change', function() {
+            
+        if (this.value === '1') {
+        this.classList.remove('bg-green');
+        this.classList.add('bg-red');
+    }    else {
+        this.classList.add('bg-green');
+        this.classList.remove('bg-red');
+    }
+    });
+
+
+
+      </script>
 
     </div>
 
 
-    <div class="container mt-5 d-flex justify-content-center">
+    <div class="container mt-5 ps-5">
+        <div class="row">
 
-        <div class="line"></div>
+            <div class="col-3">
+                <div class="form-floating mb-3">
+                    <h6 class="heading">DATE OF ACCIDENT</h6>
+                    <input type="date" class="form-control">
+                    <label for="floatingInput"></label>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <h6 class="heading">ACCIDENT TYPE</h6>
+                <select class="form-select accidenttype">
+                    <option selected value="">Commercial</option>
+                    <option selected value="">Dynamic</option>
+                    <option selected value="">Commercial</option>
+                </select>
+            </div>
+
+            <div class="col-3">
+                <h6 class="heading">REFFERED FROM</h6>
+                <select class="form-select refferedtype">
+                    <option selected value="">REFFERED FROM NAME #1</option>
+                    <option selected value="">REFFERED FROM NAME #2</option>
+                    <option selected value="">REFFERED FROM NAME #3</option>
+                </select>
+            </div>
+
+            <div class="col-3">
+                <div class="form-floating">
+                    <h6 class="heading">REF. DATE</h6>
+                    <input type="date" class="form-control" placeholder="">
+                    <label for="floatingInput"></label>
+                    
+                </div>  
+            </div>
+
+
+        </div>
     </div>
 
-    <div class="container mt-5 d-flex justify-content-center">
 
-         <div>
-            <h6>ATTORNEY</h6>
-            <select class="form-select attorney" style="color: #A9A9A9;">
-                <option selected value="">ATTORNEY NAME #1</option>
-                <option selected value="">ATTORNEY NAME #2</option>
-                <option selected value="">ATTORNEY NAME #3</option>
-            </select>
+    <div class="container mt-3 ps-5">
+        <div class="row">
+            <h6 class="heading">SAVE STATUS</h6>
+
+            <div class="col-4">
+                
+                <button type="button" class="btn btn-success savestatus">Save</button>
+            </div>
+
+            <div class="col-4">
+                
+                <button type="button" class="btn btn-danger savestatus discardbutton" >Cancel</button>
+            </div>
         </div>
 
+            
+        
     </div>
 
-    <div class="container mt-4 d-flex justify-content-center">
 
-        <div>
-
-        <h6>LOP LETTERS</h6>
-        <div class="btn-group" role="group" aria-label="Basic radio toggle button group" >
-            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-            <label class="btn btn-outline-primary" for="btnradio1" >M D</label>
-          
-            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-            <label class="btn btn-outline-primary" for="btnradio2">Physical Therapy </label>
-          
-            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-            <label class="btn btn-outline-primary" for="btnradio3">R X</label>
-
-            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-            <label class="btn btn-outline-primary" for="btnradio3">Facility</label>
-          </div>
-        </div>
-
-    </div>
-
-    <div class="container mt-5 d-flex justify-content-center">
+    <div class="container mt-5">
 
         <div class="line"></div>
+
     </div>
 
-    <div class="container mt-5 d-flex justify-content-center">
 
-        <div>
-           <h6>MD CONSULT</h6>
-           <select class="form-select attorney" style="color: #A9A9A9;">
-               <option selected value="">BUSSINESS NAME / DR. NAME</option>
-               <option selected value="">BUSSINESS NAME / DR. NAME</option>
-               <option selected value="">BUSSINESS NAME / DR. NAME</option>
-           </select>
+    <div class="container mt-5 ps-5">
+
+        <div class="row">
+            <div class="col-3">
+              <h6 class="heading">ATTORNEY</h6>
+                 <select class="form-select attorney">
+                   <option selected value="">ATTORNEY NAME #1</option>
+                   <option selected value="">ATTORNEY NAME #2</option>
+                   <option selected value="">ATTORNEY NAME #3</option>
+                </select>
+           
+           </div>
        </div>
 
+
+       <div class="row">
+        <div class="col-12 mt-4">
+          <h6 class="heading">LOP LETTERS</h6>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+            <label class="form-check-label" for="inlineCheckbox1">MD</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+            <label class="form-check-label" for="inlineCheckbox2">PHYSICAL THERAPY</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+            <label class="form-check-label" for="inlineCheckbox3">RX</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option2">
+            <label class="form-check-label" for="inlineCheckbox2">FACILITY</label>
+          </div>
+
+        </div>
+    </div>
    </div>
-   <div class="container mt-3 d-flex justify-content-center">
 
-    <div class="form-floating mb-3 dateofaccident">
-        <h6>RECORD & BILLS REQUEST DATE</h6>
-        <input type="date" class="form-control" id="floatingInput">
-        <label for="floatingInput"></label>
+       
+
+   
+
+   <div class="container mt-5">
+
+      <div class="line"></div>
+
     </div>
 
-    <div class="form-floating mb-3 dateofaccident">
-        <h6>REFERRED <br>DATE</h6>
-        <input type="date" class="form-control" id="floatingInput">
-        <label for="floatingInput"></label>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-6">
+                <div class="container-100 ps-5">
+                    <div class="row">
+                        <div class="col-12">
+                            <h6 class="heading">MD CONSULT</h6>
+                            <select class="form-select attorney" style="color: #A9A9A9;">
+                                <option selected value="">BUSSINESS NAME / DR. NAME</option>
+                                <option value="">BUSSINESS NAME / DR. NAME</option>
+                                <option value="">BUSSINESS NAME / DR. NAME</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-6">
+                            <div class="form-floating mb-3">
+                                <h6>RECORD & BILLS REQUEST DATE</h6>
+                                <input type="date" class="form-control" id="floatingInput1">
+                                <label for="floatingInput1"></label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-floating mb-3">
+                                <h6>REFERRED DATE</h6>
+                                <input type="date" class="form-control" id="floatingInput2">
+                                <label for="floatingInput2"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-floating mb-3">
+                                <h6>SENT DATE</h6>
+                                <input type="date" class="form-control" id="floatingInput3">
+                                <label for="floatingInput3"></label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div>
+                                <h6>AFFIDAVIT REQUEST</h6>
+                                <select class="form-select affidavit" style="color: #A9A9A9;">
+                                    <option selected value="">YES</option>
+                                    <option value="">NO</option>
+                                    <option value="">Commercial</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12">
+                            <div class="container-100 d-flex justify-content-start align-items-center">
+                                <h6 id="">LOP LETTERS</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12">
+                            <div class="container-100 d-flex justify-content-start align-items-center">
+                                
+                                <input class="form-check-input ms-3" type="checkbox" value="" id="flexCheckDefault">
+                                <button type="button" class="btn btn-primary ms-3" style="width: 150px;">Schedule date</button>
+                                <button type="button" class="btn btn-secondary ms-3" style="width: 150px;">History</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-12">
+                            <div class="container-100 d-flex justify-content-start button-container">
+                                <button type="button" class="btn btn-primary" style="width: 150px;">Upload</button>
+                                <button type="button" class="btn btn-secondary" style="width: 150px;">Print</button>
+                                <button type="button" class="btn btn-success" style="width: 150px;">Save</button>
+                                <button type="button" class="btn btn-danger" style="width: 150px;">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 border-visible">
+                <div class="container-100 mt-5 ps-5">
+                    <div id="loremText" class="collapse show">
+                        <div class="row">
+                            <p class="mt-3"  style="text-align: center;">
+                                <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">BILLING DETAILS</a>
+                               
+                            </p>
+                              <div class="row">
+                                <div class="col">
+                                  <div class="collapse multi-collapse" id="multiCollapseExample1">
+                                    <div class="row">
+
+                                   <div class="col-4">
+                                    <h6>BILLED AMOUNT</h6>
+
+                                    <input class="form-control" type="text" placeholder="Default input" aria-label="default input example" style="height: 60px;">
+                                   </div>
+                                   <div class="col-4">
+                                    <h6>AMOUNT SETTLEMENT</h6>
+
+                                    <input class="form-control" type="text" placeholder="Default input" aria-label="default input example" style="height: 60px;">
+                                   </div>
+                                   <div class="col-4">
+                                    <h6>CHECK RECIEVED DATE</h6>
+                                    <input class="form-control" type="date" placeholder="Default input" aria-label="default input example" style="height: 60px;">
+                                   </div>
+                                </div>
+
+                                    <div class="mb-3 mt-3">
+                                        <label for="exampleFormControlTextarea1" class="form-label">Comments</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    </div>
+
+                                    <div class="row mt-4">
+                                        <div class="col-12">
+                                            <div class="container-100 d-flex justify-content-start button-container">
+                                                <button type="button" class="btn btn-primary" style="width: 150px;">Upload</button>
+                                                <button type="button" class="btn btn-secondary" style="width: 150px;">Print</button>
+                                                <button type="button" class="btn btn-success" style="width: 150px;">Save</button>
+                                                <button type="button" class="btn btn-danger" style="width: 150px;">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-4">
+                                        <div class="col-12">
+                                            <div class="container-100 d-flex justify-content-start button-container">
+                                                <button type="button" class="btn btn-secondary" style="width: 150px;">History</button>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                  </div>
+                                </div>
+                                
+                        </div>
+                    </div>
+                        
+                    
+            </div>
+        </div>
     </div>
 
-</div>
+    <div class="container mt-5">
 
-<div class="container mt-3 d-flex justify-content-center">
+        <div class="line"></div>
+  
+      </div>
 
-    <div class="form-floating mb-3 dateofaccident">
-        <h6>SENT DATE</h6>
-        <input type="date" class="form-control" id="floatingInput">
-        <label for="floatingInput"></label>
+
+      <div class="container mt-5">
+        <div class="row">
+            <div class="col-6">
+                <div class="container-100 ps-5">
+                    <div class="row">
+                        <div class="col-12">
+                            <h6 class="heading">PHYSICAL THERAPY</h6>
+                            <select class="form-select attorney" style="color: #A9A9A9;">
+                                <option selected value="">BUSSINESS NAME / DR. NAME</option>
+                                <option value="">BUSSINESS NAME / DR. NAME</option>
+                                <option value="">BUSSINESS NAME / DR. NAME</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-6">
+                            <div class="form-floating mb-3">
+                                <h6>RECORD & BILLS REQUEST DATE</h6>
+                                <input type="date" class="form-control" id="floatingInput1">
+                                <label for="floatingInput1"></label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-floating mb-3">
+                                <h6>REFERRED DATE</h6>
+                                <input type="date" class="form-control" id="floatingInput2">
+                                <label for="floatingInput2"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-floating mb-3">
+                                <h6>SENT DATE</h6>
+                                <input type="date" class="form-control" id="floatingInput3">
+                                <label for="floatingInput3"></label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div>
+                                <h6>AFFIDAVIT REQUEST</h6>
+                                <select class="form-select affidavit" style="color: #A9A9A9;">
+                                    <option selected value="">YES</option>
+                                    <option value="">NO</option>
+                                    <option value="">Commercial</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12">
+                            <div class="container-100 d-flex justify-content-start align-items-center">
+                                <h6 id="">LOP LETTERS</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12">
+                            <div class="container-100 d-flex justify-content-start align-items-center">
+                                
+                                <input class="form-check-input ms-3" type="checkbox" value="" id="flexCheckDefault">
+                                <button type="button" class="btn btn-primary ms-3" style="width: 150px;">Schedule date</button>
+                                <button type="button" class="btn btn-secondary ms-3" style="width: 150px;">History</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-12">
+                            <div class="container-100 d-flex justify-content-start button-container">
+                                <button type="button" class="btn btn-primary" style="width: 150px;">Upload</button>
+                                <button type="button" class="btn btn-secondary" style="width: 150px;">Print</button>
+                                <button type="button" class="btn btn-success" style="width: 150px;">Save</button>
+                                <button type="button" class="btn btn-danger" style="width: 150px;">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 border-visible">
+                <div class="container-100 mt-5 ps-5">
+                    <div id="loremText" class="collapse show">
+                        <div class="row">
+                            <p class="mt-3"  style="text-align: center;">
+                                <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">BILLING DETAILS</a>
+                               
+                            </p>
+                              <div class="row">
+                                <div class="col">
+                                  <div class="collapse multi-collapse" id="multiCollapseExample2">
+                                    <div class="row">
+
+                                   <div class="col-4">
+                                    <h6>BILLED AMOUNT</h6>
+
+                                    <input class="form-control" type="text" placeholder="Default input" aria-label="default input example" style="height: 60px;">
+                                   </div>
+                                   <div class="col-4">
+                                    <h6>AMOUNT SETTLEMENT</h6>
+
+                                    <input class="form-control" type="text" placeholder="Default input" aria-label="default input example" style="height: 60px;">
+                                   </div>
+                                   <div class="col-4">
+                                    <h6>CHECK RECIEVED DATE</h6>
+                                    <input class="form-control" type="date" placeholder="Default input" aria-label="default input example" style="height: 60px;">
+                                   </div>
+                                </div>
+
+                                    <div class="mb-3 mt-3">
+                                        <label for="exampleFormControlTextarea1" class="form-label">Comments</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    </div>
+
+                                    <div class="row mt-4">
+                                        <div class="col-12">
+                                            <div class="container-100 d-flex justify-content-start button-container">
+                                                <button type="button" class="btn btn-primary" style="width: 150px;">Upload</button>
+                                                <button type="button" class="btn btn-secondary" style="width: 150px;">Print</button>
+                                                <button type="button" class="btn btn-success" style="width: 150px;">Save</button>
+                                                <button type="button" class="btn btn-danger" style="width: 150px;">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-4">
+                                        <div class="col-12">
+                                            <div class="container-100 d-flex justify-content-start button-container">
+                                                <button type="button" class="btn btn-secondary" style="width: 150px;">History</button>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                  </div>
+                                </div>
+                                
+                        </div>
+                                </div>
+                                
+                        </div>
+                    </div>
+                        
+                    
+            </div>
+        </div>
     </div>
 
-    <div>
-        <h6>AFFIDAVIT REQUEST</h6>
-        <select class="form-select accidenttype" style="color: #A9A9A9;">
-            <option selected value="">YES</option>
-            <option selected value="">NO</option>
-            <option selected value="">Commercial</option>
-        </select>
+
+    <!-- 000 -->
+
+    <div class="container mt-5">
+
+        <div class="line"></div>
+  
+      </div>
+
+
+      <div class="container mt-5">
+        <div class="row">
+            <div class="col-6">
+                <div class="container-100 ps-5">
+                    <div class="row">
+                        <div class="col-12">
+                            <h6 class="heading">PHARMACY</h6>
+                            <select class="form-select attorney" style="color: #A9A9A9;">
+                                <option selected value="">BUSSINESS NAME / DR. NAME</option>
+                                <option value="">BUSSINESS NAME / DR. NAME</option>
+                                <option value="">BUSSINESS NAME / DR. NAME</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-6">
+                            <div class="form-floating mb-3">
+                                <h6>RECORD & BILLS REQUEST DATE</h6>
+                                <input type="date" class="form-control" id="floatingInput1">
+                                <label for="floatingInput1"></label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-floating mb-3">
+                                <h6>REFERRED DATE</h6>
+                                <input type="date" class="form-control" id="floatingInput2">
+                                <label for="floatingInput2"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-floating mb-3">
+                                <h6>SENT DATE</h6>
+                                <input type="date" class="form-control" id="floatingInput3">
+                                <label for="floatingInput3"></label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div>
+                                <h6>AFFIDAVIT REQUEST</h6>
+                                <select class="form-select affidavit" style="color: #A9A9A9;">
+                                    <option selected value="">YES</option>
+                                    <option value="">NO</option>
+                                    <option value="">Commercial</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12">
+                            <div class="container-100 d-flex justify-content-start align-items-center">
+                                <h6 id="">LOP LETTERS</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12">
+                            <div class="container-100 d-flex justify-content-start align-items-center">
+                                
+                                <input class="form-check-input ms-3" type="checkbox" value="" id="flexCheckDefault">
+                                <button type="button" class="btn btn-primary ms-3" style="width: 150px;">Schedule date</button>
+                                <button type="button" class="btn btn-secondary ms-3" style="width: 150px;">History</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-12">
+                            <div class="container-100 d-flex justify-content-start button-container">
+                                <button type="button" class="btn btn-primary" style="width: 150px;">Upload</button>
+                                <button type="button" class="btn btn-secondary" style="width: 150px;">Print</button>
+                                <button type="button" class="btn btn-success" style="width: 150px;">Save</button>
+                                <button type="button" class="btn btn-danger" style="width: 150px;">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 border-visible">
+                <div class="container-100 mt-5 ps-5">
+                    <div id="loremText" class="collapse show">
+                        <div class="row">
+                            <p class="mt-3"  style="text-align: center;">
+                                <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample3" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">BILLING DETAILS</a>
+                               
+                            </p>
+                              <div class="row">
+                                <div class="col">
+                                  <div class="collapse multi-collapse" id="multiCollapseExample3">
+                                    <div class="row">
+
+                                   <div class="col-4">
+                                    <h6>BILLED AMOUNT</h6>
+
+                                    <input class="form-control" type="text" placeholder="Default input" aria-label="default input example" style="height: 60px;">
+                                   </div>
+                                   <div class="col-4">
+                                    <h6>AMOUNT SETTLEMENT</h6>
+
+                                    <input class="form-control" type="text" placeholder="Default input" aria-label="default input example" style="height: 60px;">
+                                   </div>
+                                   <div class="col-4">
+                                    <h6>CHECK RECIEVED DATE</h6>
+                                    <input class="form-control" type="date" placeholder="Default input" aria-label="default input example" style="height: 60px;">
+                                   </div>
+                                </div>
+
+                                    <div class="mb-3 mt-3">
+                                        <label for="exampleFormControlTextarea1" class="form-label">Comments</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    </div>
+
+                                    <div class="row mt-4">
+                                        <div class="col-12">
+                                            <div class="container-100 d-flex justify-content-start button-container">
+                                                <button type="button" class="btn btn-primary" style="width: 150px;">Upload</button>
+                                                <button type="button" class="btn btn-secondary" style="width: 150px;">Print</button>
+                                                <button type="button" class="btn btn-success" style="width: 150px;">Save</button>
+                                                <button type="button" class="btn btn-danger" style="width: 150px;">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-4">
+                                        <div class="col-12">
+                                            <div class="container-100 d-flex justify-content-start button-container">
+                                                <button type="button" class="btn btn-secondary" style="width: 150px;">History</button>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                  </div>
+                                </div>
+                                
+                        </div>
+                                </div>
+                                
+                        </div>
+                    </div>
+                        
+                    
+            </div>
+        </div>
     </div>
-</div>
 
 
-<div class="container mt-3 d-flex justify-content-center">
+    <!-- 111 -->
+
+    <div class="container mt-5">
+
+        <div class="line"></div>
+  
+      </div>
+
+
+      <div class="container mt-5">
+        <div class="row">
+            <div class="col-6">
+                <div class="container-100 ps-5">
+                    <div class="row">
+                        <div class="col-12">
+                            <h6 class="heading">FACILITY</h6>
+                            <select class="form-select attorney" style="color: #A9A9A9;">
+                                <option selected value="">BUSSINESS NAME / DR. NAME</option>
+                                <option value="">BUSSINESS NAME / DR. NAME</option>
+                                <option value="">BUSSINESS NAME / DR. NAME</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-6">
+                            <div class="form-floating mb-3">
+                                <h6>RECORD & BILLS REQUEST DATE</h6>
+                                <input type="date" class="form-control" id="floatingInput1">
+                                <label for="floatingInput1"></label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-floating mb-3">
+                                <h6>REFERRED DATE</h6>
+                                <input type="date" class="form-control" id="floatingInput2">
+                                <label for="floatingInput2"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-floating mb-3">
+                                <h6>SENT DATE</h6>
+                                <input type="date" class="form-control" id="floatingInput3">
+                                <label for="floatingInput3"></label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div>
+                                <h6>AFFIDAVIT REQUEST</h6>
+                                <select class="form-select affidavit" style="color: #A9A9A9;">
+                                    <option selected value="">YES</option>
+                                    <option value="">NO</option>
+                                    <option value="">Commercial</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12">
+                            <div class="container-100 d-flex justify-content-start align-items-center">
+                                <h6 id="">LOP LETTERS</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12">
+                            <div class="container-100 d-flex justify-content-start align-items-center">
+                                
+                                <input class="form-check-input ms-3" type="checkbox" value="" id="flexCheckDefault">
+                                <button type="button" class="btn btn-primary ms-3" style="width: 150px;">Schedule date</button>
+                                <button type="button" class="btn btn-secondary ms-3" style="width: 150px;">History</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-12">
+                            <div class="container-100 d-flex justify-content-start button-container">
+                                <button type="button" class="btn btn-primary" style="width: 150px;">Upload</button>
+                                <button type="button" class="btn btn-secondary" style="width: 150px;">Print</button>
+                                <button type="button" class="btn btn-success" style="width: 150px;">Save</button>
+                                <button type="button" class="btn btn-danger" style="width: 150px;">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 border-visible">
+                <div class="container-100 mt-5 ps-5">
+                    <div id="loremText" class="collapse show">
+                        <div class="row">
+                            <p class="mt-3"  style="text-align: center;">
+                                <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample4" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">BILLING DETAILS</a>
+                               
+                            </p>
+                              <div class="row">
+                                <div class="col">
+                                  <div class="collapse multi-collapse" id="multiCollapseExample4">
+                                    <div class="row">
+
+                                   <div class="col-4">
+                                    <h6>BILLED AMOUNT</h6>
+
+                                    <input class="form-control" type="text" placeholder="Default input" aria-label="default input example" style="height: 60px;">
+                                   </div>
+                                   <div class="col-4">
+                                    <h6>AMOUNT SETTLEMENT</h6>
+
+                                    <input class="form-control" type="text" placeholder="Default input" aria-label="default input example" style="height: 60px;">
+                                   </div>
+                                   <div class="col-4">
+                                    <h6>CHECK RECIEVED DATE</h6>
+                                    <input class="form-control" type="date" placeholder="Default input" aria-label="default input example" style="height: 60px;">
+                                   </div>
+                                </div>
+
+                                    <div class="mb-3 mt-3">
+                                        <label for="exampleFormControlTextarea1" class="form-label">Comments</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    </div>
+
+                                    <div class="row mt-4">
+                                        <div class="col-12">
+                                            <div class="container-100 d-flex justify-content-start button-container">
+                                                <button type="button" class="btn btn-primary" style="width: 150px;">Upload</button>
+                                                <button type="button" class="btn btn-secondary" style="width: 150px;">Print</button>
+                                                <button type="button" class="btn btn-success" style="width: 150px;">Save</button>
+                                                <button type="button" class="btn btn-danger" style="width: 150px;">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-4">
+                                        <div class="col-12">
+                                            <div class="container-100 d-flex justify-content-start button-container">
+                                                <button type="button" class="btn btn-secondary" style="width: 150px;">History</button>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                  </div>
+                                </div>
+                                
+                        </div>
+                                </div>
+                                
+                        </div>
+                    </div>
+                        
+                    
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container mt-5">
+
+        <div class="line"></div>
+  
+    </div>
+
+    <div class="container mt-3 ps-5">
+        <h6 style="margin-top: 20px;" class="heading">
+            <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/add--v1.png" alt="add--v1"/>
+             ADD FACILITY
+        </h6>
+    </div>
     
-    <div class="form-floating" id="checkbox">
-        <h6 id="lopletters">LOP LETTERS</h6>
 
-        
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="padding:8px; margin-left: 50px;">
-            
+      <div class="container mt-3">
 
-            <button type="button" class="btn btn-primary" style="width: 150px; margin-left: 40px;">Schedule date</button>
-           
+        <div class="line"></div>
+  
+      </div>
 
-            
-            <button type="button" class="btn btn-secondary">History</button>
-            
+
+      <div class="row mt-5">
+        <div class="col-12">
+            <div class="container-100 d-flex justify-content-center button-container">
+                <button type="button" class="btn btn-primary" style="width: 150px;">Save</button>
+                <button type="button" class="btn btn-secondary" style="width: 150px;">Cancel</button>
+                <button type="button" class="btn btn-success" style="width: 150px;">History</button>
+            </div>
+        </div>
     </div>
     
-</div>
-
-
-<div class="container mt-5 d-flex justify-content-center">
-
-    <div class="button-container">
-        <button type="button" class="btn btn-primary">Upload</button>
-        <button type="button" class="btn btn-secondary">Print</button>
-        <button type="button" class="btn btn-success">Save</button>
-        <button type="button" class="btn btn-danger">Cancel</button>
-
-
-    </div>
-</div>
 
 
 
-<div class="container mt-5 d-flex justify-content-center">
 
-    <div class="line"></div>
-</div> -->
+
 
 
 
 
     
     
+
 
 </body>
 </html>
