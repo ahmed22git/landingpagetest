@@ -36,12 +36,14 @@ body {
 
 }
 .id #id-text{
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
     padding-top: 12px;
     margin-left: 12px;
 }
 
+
+    
 .detail-box{
     
     border: 1px solid #E7E7E8;
@@ -56,7 +58,7 @@ body {
     
 }
 #colorSelect {
-    width: 268px; /* Adjust the width as needed */
+    width: 295px; /* Adjust the width as needed */
 }
 
 
@@ -74,6 +76,9 @@ body {
     font-weight: 600;
 
 }
+.basicbox{
+    height: 58px;
+}
 .accidenttype{ 
     height: 58px;  
 }
@@ -86,11 +91,15 @@ body {
     background-color: #E7E7E8;
 }
 .savestatus{
-    width: 268px;
+    width: 295px;
+    height: 58px;
+}
+#savestatus{
+    width: 297px;
     height: 58px;
 }
 .discardbutton{
-    margin-left: -135px;
+    margin-left: 106px;
 }
 .attorney{
     height: 58px; 
@@ -120,14 +129,9 @@ body {
 }
 
 
+
+
        
         
         
-        /* input[type="date"]::-webkit-calendar-picker-indicator {
-        background-image: url('./img/date.png'); 
-        background-size: contain; 
-        background-repeat: no-repeat; 
-        width: 16px; 
-        height: 16px; 
-        opacity: 1; 
-        } */
+        
