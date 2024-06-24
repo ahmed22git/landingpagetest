@@ -150,37 +150,27 @@
         </div>
     </div>
 
-    <div class="container mb-5" >
-
-            
-        <select class="form-select lg-3 casestatus" aria-label="Default select example" id="colorSelect">
-          <option selected value="">Open Case</option>
-          <option value="1">Close Case</option>
-          
-          
+    <div class="container mb-5">
+        <select class="form-select lg-3 casestatus bg-green" aria-label="Default select example" id="colorSelect">
+            <option selected value="">Open Case</option>
+            <option value="1">Close Case</option>
         </select>
-
-      <script>
+    </div>
+    
+    <script>
         const selectElement = document.getElementById('colorSelect');
-        selectElement.addEventListener('click', function() {
-        
-    });
-
-
+    
         selectElement.addEventListener('change', function() {
-            
-        if (this.value === '1') {
-        this.classList.remove('bg-green');
-        this.classList.add('bg-red');
-    }    else {
-        this.classList.add('bg-green');
-        this.classList.remove('bg-red');
-    }
-    });
-
-
-
-      </script>
+            if (this.value === '1') {
+                this.classList.remove('bg-green');
+                this.classList.add('bg-red');
+            } else {
+                this.classList.remove('bg-red');
+                this.classList.add('bg-green');
+            }
+        });
+    </script>
+    
 
     </div>
 
