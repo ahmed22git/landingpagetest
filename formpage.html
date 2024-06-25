@@ -17,6 +17,13 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+    
     
 
 </head>
@@ -58,13 +65,15 @@
             </div>
 
             <div class="col-6 ps-3 mt-5 mb-3">
-                <div class="date-wrapper">
-                    <input type="text" class="form-control basicbox" placeholder="DOB"
-                    onfocus="(this.type='date')" style="font-size: 18px;">
-                           
-                    
+                <div class="date-wrapper position-relative">
+                    <input type="text" class="form-control basicbox" placeholder="DOB" id="datepicker1" style="font-size: 18px;">
+                    <span class="calendar-icon">
+                        <img src="img/icons8-calendar-96.png" alt="calendar-icon" width="24" height="24">
+                    </span>
                 </div>
+        
             </div>
+            
             
            
 
@@ -181,12 +190,14 @@
             <div class="col">
                 <div class="form-floating mb-3">
                     <h6 class="heading">DATE OF ACCIDENT</h6>
-                    <div class="date-wrapper">
-                        <input type="text" class="form-control basicbox" placeholder="Enter date"
-                        onfocus="(this.type='date')">
-                               
-                        
+                    <div class="date-wrapper position-relative">
+                        <input type="text" class="form-control basicbox" placeholder="Enter date" id="datepicker2" style="font-size: 18px;">
+                        <span class="calendar-icon">
+                            <img src="img/icons8-calendar-96.png" alt="calendar-icon" width="24" height="24">
+                        </span>
                     </div>
+                    
+                    
                 </div>
             </div>
     
@@ -211,11 +222,11 @@
             <div class="col-3">
                 <div class="form-floating">
                     <h6 class="heading">REF. DATE</h6>
-                    <div class="date-wrapper">
-                        <input type="text" class="form-control basicbox" placeholder="Enter date"
-                        onfocus="(this.type='date')">
-                               
-                        
+                    <div class="date-wrapper position-relative">
+                        <input type="text" class="form-control basicbox" placeholder="Enter date" id="datepicker3" style="font-size: 18px;">
+                        <span class="calendar-icon">
+                            <img src="img/icons8-calendar-96.png" alt="calendar-icon" width="24" height="24">
+                        </span>
                     </div>
                 </div>  
             </div>
@@ -332,27 +343,33 @@
                     <div class="col-3">
                         <div class="form-floating mb-3">
                             <h6>RECORD & BILLS REQUEST DATE</h6>
-                            <div class="date-wrapper">
-                                <input type="text" class="form-control basicbox" placeholder="Enter date"
-                                    onfocus="(this.type='date')">
+                            <div class="date-wrapper position-relative">
+                                <input type="text" class="form-control basicbox" placeholder="Enter date" id="datepicker4" style="font-size: 18px;">
+                                <span class="calendar-icon">
+                                    <img src="img/icons8-calendar-96.png" alt="calendar-icon" width="24" height="24">
+                                </span>
                             </div>
                         </div>
                     </div>
                     <div class="col-3">
                         <div class="form-floating mb-3">
                             <h6>REFERRED DATE</h6>
-                            <div class="date-wrapper">
-                                <input type="text" class="form-control basicbox" placeholder="Enter referred date"
-                                    onfocus="(this.type='date')">
+                            <div class="date-wrapper position-relative">
+                                <input type="text" class="form-control basicbox" placeholder="Enter date" id="datepicker5" style="font-size: 18px;">
+                                <span class="calendar-icon">
+                                    <img src="img/icons8-calendar-96.png" alt="calendar-icon" width="24" height="24">
+                                </span>
                             </div>
                         </div>
                     </div>
                     <div class="col-3">
                         <div class="form-floating mb-3">
                             <h6>SENT DATE</h6>
-                            <div class="date-wrapper">
-                                <input type="text" class="form-control basicbox" placeholder="Enter sent date"
-                                    onfocus="(this.type='date')">
+                            <div class="date-wrapper position-relative">
+                                <input type="text" class="form-control basicbox" placeholder="Enter date" id="datepicker6" style="font-size: 18px;">
+                                <span class="calendar-icon">
+                                    <img src="img/icons8-calendar-96.png" alt="calendar-icon" width="24" height="24">
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -432,9 +449,11 @@
                                         </div>
                                         <div class="col-4">
                                             <h6>CHECK RECEIVED DATE</h6>
-                                            <div class="date-wrapper">
-                                                <input type="text" class="form-control basicbox" placeholder="Enter date"
-                                                    onfocus="(this.type='date')">
+                                            <div class="date-wrapper position-relative">
+                                                <input type="text" class="form-control basicbox" placeholder="Enter date" id="datepicker7" style="font-size: 18px;">
+                                                <span class="calendar-icon">
+                                                    <img src="img/icons8-calendar-96.png" alt="calendar-icon" width="24" height="24">
+                                                </span>
                                             </div>
                                         </div>
                                     </div>
@@ -981,6 +1000,87 @@
             document.getElementById('otherCheckbox1').checked = this.checked;
         });
     </script>
+
+<script>
+    $(document).ready(function() {
+        // Initialize first datepicker
+        $("#datepicker1").datepicker({
+            showOn: "focus",
+            changeMonth: true,
+            changeYear: true,
+            showButtonPanel: true,
+            dateFormat: 'mm/dd/yy'
+        });
+
+        // Initialize second datepicker
+        $("#datepicker2").datepicker({
+            showOn: "focus",
+            changeMonth: true,
+            changeYear: true,
+            showButtonPanel: true,
+            dateFormat: 'mm/dd/yy'
+        });
+        $("#datepicker3").datepicker({
+            showOn: "focus",
+            changeMonth: true,
+            changeYear: true,
+            showButtonPanel: true,
+            dateFormat: 'mm/dd/yy'
+        });
+        $("#datepicker4").datepicker({
+            showOn: "focus",
+            changeMonth: true,
+            changeYear: true,
+            showButtonPanel: true,
+            dateFormat: 'mm/dd/yy'
+        });
+        $("#datepicker5").datepicker({
+            showOn: "focus",
+            changeMonth: true,
+            changeYear: true,
+            showButtonPanel: true,
+            dateFormat: 'mm/dd/yy'
+        });
+        $("#datepicker6").datepicker({
+            showOn: "focus",
+            changeMonth: true,
+            changeYear: true,
+            showButtonPanel: true,
+            dateFormat: 'mm/dd/yy'
+        });
+        $("#datepicker7").datepicker({
+            showOn: "focus",
+            changeMonth: true,
+            changeYear: true,
+            showButtonPanel: true,
+            dateFormat: 'mm/dd/yy'
+        });
+
+        // Custom CSS to enlarge the datepicker
+        $.datepicker._updateDatepicker_original = $.datepicker._updateDatepicker;
+        $.datepicker._updateDatepicker = function(inst) {
+            $.datepicker._updateDatepicker_original(inst);
+            var buttonPane = $(this).datepicker("widget").find(".ui-datepicker-buttonpane");
+            buttonPane.css({
+                'height': '60px',
+                'width': '250px'
+            });
+            $(this).datepicker("widget").css({
+                'font-size': '1.2em'  // Increase overall font size
+            });
+        };
+
+        // Trigger datepicker on calendar icon click for both instances
+        $(".calendar-icon").on("click", function() {
+            $(this).prev('input').focus();
+        });
+    });
+</script>
+
+    
+
+
+
     
 
 

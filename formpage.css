@@ -303,6 +303,28 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     width: 500px; /* Adjust the width as per your design needs */
 }
 
+.date-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.basicbox {
+    font-size: 18px;
+    padding-right: 40px; /* Make space for the icon */
+}
+
+.calendar-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.calendar-icon img {
+    width: 24px;
+    height: 24px;
+}
 
 
 
