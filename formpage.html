@@ -262,7 +262,7 @@
             <div class="col-3">
                 <h6 class="heading">ATTORNEY</h6>
             </div>
-            <div class="col-5" style="margin-left: -145px">
+            <div class="col-7" style="margin-left: -145px">
                 <select class="form-select lg-3 attorney">
                     <option selected value="">ATTORNEY NAME #1</option>
                     <option value="">ATTORNEY NAME #2</option>
@@ -313,147 +313,135 @@
     <div class="container mt-5">
         <div class="row">
             <div class="col-12">
-                <div class="container-100 ps-3">
-                    <div class="row mb-5">
-                        <div class="col-3 mt-3">
-                            <h6 class="heading">MD CONSULT</h6>
+                <div class="row mb-5">
+                    <div class="col-3 mt-3">
+                        <h6 class="heading">MD CONSULT</h6>
+                    </div>
+                    <div class="col-7" style="margin-left: -145px;" > <!-- Adjusted width to col-5 -->
+                        <select class="form-select attorney" style="color: #A9A9A9;" >
+                            <option selected value="">BUSINESS NAME / DR. NAME</option>
+                            <option value="">BUSINESS NAME / DR. NAME</option>
+                            <option value="">BUSINESS NAME / DR. NAME</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <!-- Rest of your content remains unchanged -->
+                
+                <div class="row mt-3">
+                    <div class="col-3">
+                        <div class="form-floating mb-3">
+                            <h6>RECORD & BILLS REQUEST DATE</h6>
+                            <div class="date-wrapper">
+                                <input type="text" class="form-control basicbox" placeholder="Enter date"
+                                    onfocus="(this.type='date')">
+                            </div>
                         </div>
-                        <div class="col-5" style="margin-left: -155px">
-                            <select class="form-select attorney" style="color: #A9A9A9; ">
-                                <option selected value="">BUSINESS NAME / DR. NAME</option>
-                                <option value="">BUSINESS NAME / DR. NAME</option>
-                                <option value="">BUSINESS NAME / DR. NAME</option>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-floating mb-3">
+                            <h6>REFERRED DATE</h6>
+                            <div class="date-wrapper">
+                                <input type="text" class="form-control basicbox" placeholder="Enter referred date"
+                                    onfocus="(this.type='date')">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-floating mb-3">
+                            <h6>SENT DATE</h6>
+                            <div class="date-wrapper">
+                                <input type="text" class="form-control basicbox" placeholder="Enter sent date"
+                                    onfocus="(this.type='date')">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div>
+                            <h6>AFFIDAVIT REQUEST</h6>
+                            <select class="form-select lg-3 affidavit" style="color: #A9A9A9;">
+                                <option selected value="">YES</option>
+                                <option value="">NO</option>
+                                <option value="">Commercial</option>
                             </select>
                         </div>
                     </div>
-                    <div class="row mt-3">
-                        <div class="col-3">
-                            <div class="form-floating mb-3">
-                                <h6>RECORD & BILLS REQUEST DATE</h6>
-                                <div class="date-wrapper">
-                                    <input type="text" class="form-control basicbox" placeholder="Enter date"
-                                    onfocus="(this.type='date')">
-                                           
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="form-floating mb-3">
-                                <h6>REFERRED DATE</h6>
-                                <div class="date-wrapper">
-                                    <input type="text" class="form-control basicbox" placeholder="Enter reffered date"
-                                    onfocus="(this.type='date')">
-                                           
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    
-                    
-                        <div class="col-3">
-                            <div class="form-floating mb-3">
-                                <h6>SENT DATE</h6>
-                                <div class="date-wrapper">
-                                    <input type="text" class="form-control basicbox" placeholder="Enter sent date"
-                                    onfocus="(this.type='date')">
-                                           
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div>
-                                <h6>AFFIDAVIT REQUEST</h6>
-                                <select class="form-select lg-3 affidavit" style="color: #A9A9A9;">
-                                    <option selected value="">YES</option>
-                                    <option value="">NO</option>
-                                    <option value="">Commercial</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mt-3">
-                        <div class="col-12">
-                            <div class="container-100 d-flex justify-content-start align-items-center">
-                                <h6 class="heading">LOP LETTERS</h6>
-                                <div class="ms-3">
-                                    
-
-                                    <div class="form-check form-check-inline ps-5">
-                                        <input class="form-check-input custom-checkbox" type="checkbox" id="otherCheckbox1" value="option1">
-                                        <label class="form-check-label" for="inlineCheckbox1">MD</label>
-                                    </div>
-
-
-                                    <button type="button" class="btn btn-primary ms-3" style="width: 150px;">Schedule date</button>
-                                    <button type="button" class="btn btn-secondary ms-3" style="width: 150px;">History</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="row mt-4 ps-5" style="margin-left: 200px;">
-                        <div class="col-12">
-                            <div class="container-100 button-container">
-                                <button type="button" class="btn btn-primary" style="width: 150px;">Upload</button>
-                                <button type="button" class="btn btn-secondary ms-2" style="width: 150px;">Print</button>
-                                <button type="button" class="btn btn-success ms-2" style="width: 150px;">Save</button>
-                                <button type="button" class="btn btn-danger ms-2" style="width: 150px;">Cancel</button>
-                            </div>
-                        </div>
-                    </div>
-                    
                 </div>
+                
+                <div class="row mt-3">
+                    <div class="col-12">
+                        <div class="container-100 d-flex justify-content-start align-items-center">
+                            <h6 class="heading" style="margin-bottom: 0; margin-right: 15px;">LOP LETTERS</h6>
+                            <div class="ms-3">
+                                <div class="form-check form-check-inline ps-5">
+                                    <input class="form-check-input custom-checkbox" type="checkbox" id="otherCheckbox1"
+                                        value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">MD</label>
+                                </div>
+                                <button type="button" class="btn btn-primary ms-3" style="width: 150px;">Schedule date</button>
+                                <button type="button" class="btn btn-secondary ms-3" style="width: 150px;">History</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="row mt-4 ps-5" style="margin-left: 219px;">
+                    <div class="col-12">
+                        <div class="container-100 button-container">
+                            <button type="button" class="btn btn-primary" style="width: 150px;">Upload</button>
+                            <button type="button" class="btn btn-secondary ms-2" style="width: 150px;">Print</button>
+                            <button type="button" class="btn btn-success ms-2" style="width: 150px;">Save</button>
+                            <button type="button" class="btn btn-danger ms-2" style="width: 150px;">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </div>
-
+    
     <div class="container mt-4">
-
         <div class="line"></div>
-  
-      </div>
+    </div>
     
     <div class="container mt-3">
         <div class="row">
             <div class="col-12">
-                <div class="container-100 ps-5">
-                    <div class="row">
-                        <div class="container mt-2">
-                            
-                                
-                                    <p class="d-flex align-items-center">
-                                        <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/add--v1.png" alt="add--v1" data-toggle="collapse" href="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1" style="cursor: pointer;">
-                                        <span class="heading ms-2" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">BILLING DETAILS</span>
-                                    </p>
-                                
-                            
+                <div class="row">
+                    <div class="container mt-2">
+                        <p class="d-flex align-items-center">
+                            <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/add--v1.png"
+                                alt="add--v1" data-toggle="collapse" href="#multiCollapseExample1" aria-expanded="false"
+                                aria-controls="multiCollapseExample1" style="cursor: pointer;">
+                            <span class="heading ms-2" data-toggle="collapse" href="#multiCollapseExample1" role="button"
+                                aria-expanded="false" aria-controls="multiCollapseExample1">BILLING DETAILS</span>
+                        </p>
                         <div class="row">
                             <div class="col">
                                 <div class="collapse multi-collapse" id="multiCollapseExample1">
                                     <div class="row">
                                         <div class="col-4">
                                             <h6>BILLED AMOUNT</h6>
-                                            <input class="form-control" type="text" placeholder="Default input" aria-label="default input example" style="height: 60px;">
+                                            <input class="form-control" type="text" placeholder="Default input"
+                                                aria-label="default input example" style="height: 60px;">
                                         </div>
                                         <div class="col-4">
                                             <h6>AMOUNT SETTLEMENT</h6>
-                                            <input class="form-control" type="text" placeholder="Default input" aria-label="default input example" style="height: 60px;">
+                                            <input class="form-control" type="text" placeholder="Default input"
+                                                aria-label="default input example" style="height: 60px;">
                                         </div>
                                         <div class="col-4">
                                             <h6>CHECK RECEIVED DATE</h6>
                                             <div class="date-wrapper">
                                                 <input type="text" class="form-control basicbox" placeholder="Enter date"
-                                                onfocus="(this.type='date')">
-                                                       
-                                                
+                                                    onfocus="(this.type='date')">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="mb-3 mt-3">
                                         <label for="exampleFormControlTextarea1" class="form-label">Comments</label>
-                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1"
+                                            rows="3"></textarea>
                                     </div>
                                     <div class="row mt-4">
                                         <div class="col-12 d-flex justify-content-center">
@@ -465,7 +453,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                    
                                     <div class="row mt-4">
                                         <div class="col-12 d-flex justify-content-center">
                                             <div class="container-100 d-flex justify-content-center button-container">
@@ -473,25 +460,26 @@
                                             </div>
                                         </div>
                                     </div>
-                                    
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-       </div>
+        </div>
     </div>
+    
     
 
     <div class="container mt-2">
 
         <div class="line"></div>
   
-      </div>
+    </div>
 
 
-      <div class="container mt-5">
+    <div class="container mt-5">
+        
         <div class="row">
             <div class="col-6">
                 <div class="container-100 ps-5">

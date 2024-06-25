@@ -99,6 +99,7 @@ body {
 }
 .attorney{
     height: 58px; 
+   
 }
 .form-floating h6, .form-select, .form-control, #checkbox, .button-container {
     width: 100%;
@@ -292,6 +293,16 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     background-repeat: no-repeat;
     background-position: center; /* Center the icon */
 }
+.form-check-label {
+    font-size: 18px;
+    font-weight: 600; /* Adjust the font size as needed */
+}
+
+#custom-select-width {
+    width: 500px; /* Adjust the width as per your design needs */
+}
+
+
 
 
 /* Adjust the size and position of the custom icon */
