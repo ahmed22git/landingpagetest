@@ -56,119 +56,128 @@
         </div>
     </div>
     
-    <div class="container detail-box">
-        <div class="row">
-            <div class="col-6 ps-3 mt-5 mb-3">
-                
-                <input type="text" class="form-control basicbox" id="exampleFormControlInput1" placeholder="Full Name" 
-                       onfocus="hidePlaceholder(this)" onblur="showPlaceholder(this)" style="font-size: 18px;">
-            </div>
-
-            <div class="col-6 ps-3 mt-5 mb-3">
-                <div class="date-wrapper position-relative">
-                    <input type="text" class="form-control basicbox" placeholder="DOB" id="datepicker1" style="font-size: 18px;">
-                    <span class="calendar-icon">
-                        <img src="img/icons8-calendar-96.png" alt="calendar-icon" width="24" height="24">
-                    </span>
+    <div class="container-xxl w-100 detail-box">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-6 ps-3  mb-3" style="margin-top: 32px;">
+                    <input type="text" class="form-control basicbox" id="exampleFormControlInput1" placeholder="Full Name" 
+                           onfocus="hidePlaceholder(this)" onblur="showPlaceholder(this)" style="font-size: 18px;">
                 </div>
-        
+                <div class="col-6 pe-3 mb-3" style="margin-top: 32px;">
+                    <div class="date-wrapper position-relative">
+                        <input type="text" class="form-control basicbox" placeholder="DOB" id="datepicker1" style="font-size: 18px;">
+                        <span class="calendar-icon">
+                            <img src="img/icons8-calendar-96.png" alt="calendar-icon" width="24" height="24">
+                        </span>
+                    </div>
+                </div>
             </div>
-            
-            
-           
-
-        </div>
-    
-        <div class="row">
-            <div class="col-6 ps-3 mb-3 mt-3 ">
-                
+            <div class="row">
+                <div class="col-6 ps-3 mb-3 mt-3">
                     <input type="text" class="form-control basicbox" id="floatingAddress" placeholder="Address" 
-                       onfocus="hidePlaceholder(this)" onblur="showPlaceholder(this)" style="font-size: 18px;">
-                
-            </div>
-            <div class="col-6 mb-3 mt-3 pe-3 ">
-                
+                           onfocus="hidePlaceholder(this)" onblur="showPlaceholder(this)" style="font-size: 18px;">
+                </div>
+                <div class="col-6 mb-3 mt-3 pe-3">
                     <input type="text" class="form-control basicbox" id="floatingApartment" placeholder="Apartment, suite, etc" 
-                       onfocus="hidePlaceholder(this)" onblur="showPlaceholder(this)" style="font-size: 18px;">
-            
+                           onfocus="hidePlaceholder(this)" onblur="showPlaceholder(this)" style="font-size: 18px;">
+                </div>
             </div>
-        </div>
-    
-        
-    
-        <div class="row">
-            <div class="col-4 ps-3 mb-3 mt-3">
-                
+            <div class="row">
+                <div class="col-4 ps-3 mb-3 mt-3">
                     <input type="text" class="form-control basicbox" id="floatingCity" placeholder="City" 
-                       onfocus="hidePlaceholder(this)" onblur="showPlaceholder(this)" style="font-size: 18px;">
-                
-            </div>
-    
-            <div class="col-4 mb-3 mt-3">
-                
+                           onfocus="hidePlaceholder(this)" onblur="showPlaceholder(this)" style="font-size: 18px;">
+                </div>
+                <div class="col-4 mb-3 mt-3">
                     <input type="text" class="form-control basicbox" id="floatingCity" placeholder="State" 
-                       onfocus="hidePlaceholder(this)" onblur="showPlaceholder(this)" style="font-size: 18px;">
-                
-            </div>
-    
-            <div class="col-4 pe-3 mb-3 mt-3">
-                
+                           onfocus="hidePlaceholder(this)" onblur="showPlaceholder(this)" style="font-size: 18px;">
+                </div>
+                <div class="col-4 pe-3 mb-3 mt-3">
                     <input type="text" class="form-control basicbox" id="floatingCity" placeholder="Zip" 
-                       onfocus="hidePlaceholder(this)" onblur="showPlaceholder(this)" style="font-size: 18px;">
-                
+                           onfocus="hidePlaceholder(this)" onblur="showPlaceholder(this)" style="font-size: 18px;">
+                </div>
             </div>
-        </div>
-    
-        <div class="row">
-            <div class="col-6 ps-3 mb-3 mt-3">
-                
+            <div class="row" style="margin-bottom: 32px;">
+                <div class="col-6 ps-3 mt-3">
                     <input type="text" class="form-control basicbox" id="floatingCity" placeholder="Telephone" 
-                       onfocus="hidePlaceholder(this)" onblur="showPlaceholder(this)" style="font-size: 18px;">
-                
-            </div>
-    
-            <div class="col-6 pe-3 mb-5 mt-3">
-               
+                           onfocus="hidePlaceholder(this)" onblur="showPlaceholder(this)" style="font-size: 18px;">
+                </div>
+                <div class="col-6 pe-3 mt-3">
                     <input type="text" class="form-control basicbox" id="floatingCity" placeholder="Email" 
-                       onfocus="hidePlaceholder(this)" onblur="showPlaceholder(this)" style="font-size: 18px;">
-                
+                           onfocus="hidePlaceholder(this)" onblur="showPlaceholder(this)" style="font-size: 18px;">
+                </div>
             </div>
         </div>
-        <script>
-            function hidePlaceholder(input) {
-                input.setAttribute('data-placeholder', input.getAttribute('placeholder'));
-                input.setAttribute('placeholder', '');
-            }
-    
-            function showPlaceholder(input) {
-                if (input.value === '') {
-                    input.setAttribute('placeholder', input.getAttribute('data-placeholder'));
-                }
-            }
-        </script>
     </div>
     
-
-    <div class="container">
+    <div class="container ps-4">
         <div class="row">
             <div class="col-12 mt-5 heading">
                 <p id="heading">CASE STATUS</p>
-
-                
             </div>
         </div>
     </div>
-
-    <div class="container mb-5">
-        <select class="form-select lg-4 casestatus bg-green" aria-label="Default select example" id="colorSelect">
-            <option selected value="">Open Case</option>
-            <option value="1">Close Case</option>
+    
+    <div class="container ps-4 mb-5">
+        <select class="form-select lg-4 casestatus bg-green" aria-label="Default select example" id="colorSelect" style="font-size: 18px;">
+            <option selected value="" style="font-family: 'Inter'; font-size: 18px;">OPEN CASE</option>
+            <option value="1"  style="font-family: 'Inter'; font-size: 18px;">CLOSE CASE</option>
         </select>
     </div>
     
-    <script>
-        const selectElement = document.getElementById('colorSelect');
+    <div class="container ps-4">
+        <div class="row">
+            <div class="row">
+                <div class="col-3 ps-3 mb-3 mt-3">
+                    <h6 class="heading">DATE OF ACCIDENT</h6>
+                    <div class="date-wrapper position-relative">
+                        <input type="text" class="form-control basicbox" placeholder="Enter date" id="datepicker2" style="font-size: 18px;">
+                        <span class="calendar-icon">
+                            <img src="img/icons8-calendar-96.png" alt="calendar-icon" width="24" height="24">
+                        </span>
+                    </div>
+                </div>
+                <div class="col-3 mb-3 mt-3">
+                    <h6 class="heading">ACCIDENT TYPE</h6>
+                <select class="form-select lg-3 accidenttype" style="font-size: 18px;">
+                    <option selected value="">Commercial</option>
+                    <option value="">Dynamic</option>
+                    <option value="">Commercial</option>
+                </select>
+                </div>
+                <div class="col-3 pe-3 mb-3 mt-3">
+                    <h6 class="heading">REFERRED FROM</h6>
+                    <select class="form-select lg-3 refferedtype" style="font-size: 18px;">
+                        <option selected value="">REFERRED FROM NAME #1</option>
+                        <option value="">REFERRED FROM NAME #2</option>
+                        <option value="">REFERRED FROM NAME #3</option>
+                    </select>
+                </div>
+                <div class="col-3 pe-3 mb-3 mt-3">
+                    <h6 class="heading">REF. DATE</h6>
+                    <div class="date-wrapper position-relative">
+                        <input type="text" class="form-control basicbox" placeholder="Enter date" id="datepicker3" style="font-size: 18px;">
+                        <span class="calendar-icon">
+                            <img src="img/icons8-calendar-96.png" alt="calendar-icon" width="24" height="24">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+    </div>
     
+    <script>
+        function hidePlaceholder(input) {
+            input.setAttribute('data-placeholder', input.getAttribute('placeholder'));
+            input.setAttribute('placeholder', '');
+        }
+    
+        function showPlaceholder(input) {
+            if (input.value === '') {
+                input.setAttribute('placeholder', input.getAttribute('data-placeholder'));
+            }
+        }
+    
+        const selectElement = document.getElementById('colorSelect');
         selectElement.addEventListener('change', function() {
             if (this.value === '1') {
                 this.classList.remove('bg-green');
@@ -180,76 +189,25 @@
         });
     </script>
     
+    
 
-    </div>
 
-
-    <div class="container">
+    <div class="container ps-4">
         <div class="row">
-    
-            <div class="col">
-                <div class="form-floating mb-3">
-                    <h6 class="heading">DATE OF ACCIDENT</h6>
-                    <div class="date-wrapper position-relative">
-                        <input type="text" class="form-control basicbox" placeholder="Enter date" id="datepicker2" style="font-size: 18px;">
-                        <span class="calendar-icon">
-                            <img src="img/icons8-calendar-96.png" alt="calendar-icon" width="24" height="24">
-                        </span>
-                    </div>
-                    
-                    
-                </div>
-            </div>
-    
-            <div class="col">
-                <h6 class="heading">ACCIDENT TYPE</h6>
-                <select class="form-select lg-3 accidenttype">
-                    <option selected value="">Commercial</option>
-                    <option value="">Dynamic</option>
-                    <option value="">Commercial</option>
-                </select>
-            </div>
-    
-            <div class="col-3">
-                <h6 class="heading">REFERRED FROM</h6>
-                <select class="form-select lg-3 refferedtype">
-                    <option selected value="">REFERRED FROM NAME #1</option>
-                    <option value="">REFERRED FROM NAME #2</option>
-                    <option value="">REFERRED FROM NAME #3</option>
-                </select>
-            </div>
-    
-            <div class="col-3">
-                <div class="form-floating">
-                    <h6 class="heading">REF. DATE</h6>
-                    <div class="date-wrapper position-relative">
-                        <input type="text" class="form-control basicbox" placeholder="Enter date" id="datepicker3" style="font-size: 18px;">
-                        <span class="calendar-icon">
-                            <img src="img/icons8-calendar-96.png" alt="calendar-icon" width="24" height="24">
-                        </span>
-                    </div>
-                </div>  
-            </div>
-    
-        </div>
-    </div>
-    
-
-
-    <div class="container mt-5 ps-3">
-        <div class="row">
+         <div class="row">
             <div class="col-12">
-                <div class="row">
+                <div class="row mt-4">
                     <!-- Empty Space: col-1 to col-6 -->
-                    <div class="col-12 col-md-6"></div>
-                    
+                    <div class="col-9 d-flex justify-content-end">
+                    <button type="button" class="btn btn-success" id="savestatus" style="font-size: 20px;">SAVE</button>
+                    </div>
                     <!-- Buttons: col-7 to col-12 -->
-                    <div class="col-12 col-md-6 d-flex justify-content-end pe-3">
-                        <button type="button" class="btn btn-success me-4" id="savestatus" style="font-size: 20px;">Save</button>
-                        <button type="button" class="btn btn-danger" id="savestatus" style="font-size: 20px;">Cancel</button>
+                    <div class="col-3">
+                        <button type="button" class="btn btn-danger" id="savestatus" style="font-size: 20px; margin-left: 2px;">CANCEL</button>
                     </div>
                 </div>
             </div>
+         </div>
         </div>
     </div>
     
@@ -268,13 +226,13 @@
     </div>
 
 
-    <div class="container mt-5 ps-3">
+    <div class="container mt-5">
         <div class="row align-items-center">
             <div class="col-3">
                 <h6 class="heading">ATTORNEY</h6>
             </div>
             <div class="col-7" style="margin-left: -145px">
-                <select class="form-select lg-3 attorney">
+                <select class="form-select lg-3 attorney" style="font-size: 18px;">
                     <option selected value="">ATTORNEY NAME #1</option>
                     <option value="">ATTORNEY NAME #2</option>
                     <option value="">ATTORNEY NAME #3</option>
@@ -286,7 +244,7 @@
             <div class="col-3">
                 <h6 class="heading">LOP LETTERS</h6>
             </div>
-            <div class="col-9" style="margin-left: -170px">
+            <div class="col-9" style="margin-left: -170px;">
                 <div class="form-check form-check-inline">
                     <input class="form-check-input custom-checkbox" type="checkbox" id="inlineCheckbox1" value="option1">
                     <label class="form-check-label" for="inlineCheckbox1">MD</label>
@@ -305,10 +263,11 @@
                 </div>
             </div>
         </div>
+        
     </div>
     
     
-   </div>
+   
 
        
 
@@ -323,13 +282,13 @@
 
     <div class="container mt-5">
         <div class="row">
-            <div class="col-12">
+            
                 <div class="row mb-5">
                     <div class="col-3 mt-3">
                         <h6 class="heading">MD CONSULT</h6>
                     </div>
                     <div class="col-7" style="margin-left: -145px;" > <!-- Adjusted width to col-5 -->
-                        <select class="form-select lg-3 attorney" style="color: #A9A9A9;" >
+                        <select class="form-select lg-3 attorney" style="color: #A9A9A9; font-size: 18px;">
                             <option selected value="">BUSINESS NAME / DR. NAME</option>
                             <option value="">BUSINESS NAME / DR. NAME</option>
                             <option value="">BUSINESS NAME / DR. NAME</option>
@@ -340,20 +299,18 @@
                 <!-- Rest of your content remains unchanged -->
                 
                 <div class="row mt-3">
-                    <div class="col-3">
-                        <div class="form-floating mb-3">
-                            <h6>RECORD & BILLS REQUEST DATE</h6>
-                            <div class="date-wrapper position-relative">
-                                <input type="text" class="form-control basicbox" placeholder="Enter date" id="datepicker4" style="font-size: 18px;">
-                                <span class="calendar-icon">
-                                    <img src="img/icons8-calendar-96.png" alt="calendar-icon" width="24" height="24">
-                                </span>
-                            </div>
+                    <div class="col-3 ps-3 mb-3">
+                        <h6 class="heading">DATE OF ACCIDENT</h6>
+                        <div class="date-wrapper position-relative">
+                            <input type="text" class="form-control basicbox" placeholder="Enter date" id="datepicker4" style="font-size: 18px;">
+                            <span class="calendar-icon">
+                                <img src="img/icons8-calendar-96.png" alt="calendar-icon" width="24" height="24">
+                            </span>
                         </div>
                     </div>
                     <div class="col-3">
                         <div class="form-floating mb-3">
-                            <h6>REFERRED DATE</h6>
+                            <h6 class="heading" >REFERRED DATE</h6>
                             <div class="date-wrapper position-relative">
                                 <input type="text" class="form-control basicbox" placeholder="Enter date" id="datepicker5" style="font-size: 18px;">
                                 <span class="calendar-icon">
@@ -364,7 +321,7 @@
                     </div>
                     <div class="col-3">
                         <div class="form-floating mb-3">
-                            <h6>SENT DATE</h6>
+                            <h6 class="heading">SENT DATE</h6>
                             <div class="date-wrapper position-relative">
                                 <input type="text" class="form-control basicbox" placeholder="Enter date" id="datepicker6" style="font-size: 18px;">
                                 <span class="calendar-icon">
@@ -375,8 +332,8 @@
                     </div>
                     <div class="col-3">
                         <div>
-                            <h6>AFFIDAVIT REQUEST</h6>
-                            <select class="form-select lg-3 affidavit" style="color: #A9A9A9;">
+                            <h6 class="heading">AFFIDAVIT REQUEST</h6>
+                            <select class="form-select lg-3 affidavit" style="color: #A9A9A9; font-size: 18px;"> 
                                 <option selected value="">YES</option>
                                 <option value="">NO</option>
                                 <option value="">Commercial</option>
@@ -387,31 +344,31 @@
                 
                 <div class="row mt-3">
                     <div class="col-12">
-                        <div class="container-100 d-flex justify-content-start align-items-center">
-                            <h6 class="heading" style="margin-bottom: 0; margin-right: 15px;">LOP LETTERS</h6>
-                            <div class="ms-3">
-                                <div class="form-check form-check-inline ps-5">
-                                    <input class="form-check-input custom-checkbox" type="checkbox" id="otherCheckbox1"
-                                        value="option1">
-                                    <label class="form-check-label" for="inlineCheckbox1">MD</label>
+                        <div class="row align-items-center">
+                            <div class="col-2">
+                                <h6 class="heading">LOP LETTERS</h6>
+                            </div>
+                            <div class="col-1 d-flex align-items-center">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input custom-checkbox" type="checkbox" id="otherCheckbox1" value="option1">
+                                    <label class="form-check-label" for="otherCheckbox1">MD</label>
                                 </div>
-                                <button type="button" class="btn btn-primary ms-3" style="width: 150px;">Schedule date</button>
-                                <button type="button" class="btn btn-secondary ms-3" style="width: 150px;">History</button>
+                            </div>
+                            <div class="col-9 d-flex justify-content-start">
+                                <button type="button" class="btn btn-primary ms-4" style="width: 150px;">Schedule date</button>
+                                <button type="button" class="btn btn-secondary ms-4" style="width: 150px;">History</button>
+                                <button type="button" class="btn btn-primary ms-4" style="width: 150px;">Upload</button>
+                                <button type="button" class="btn btn-secondary ms-4" style="width: 150px;">Print</button>
+                                <button type="button" class="btn btn-success ms-4" style="width: 150px;">Save</button>
+                                <button type="button" class="btn btn-danger ms-4" style="width: 150px;">Cancel</button>
                             </div>
                         </div>
                     </div>
                 </div>
+                
+                
     
-                <div class="row mt-4 ps-5" style="margin-left: 219px;">
-                    <div class="col-12">
-                        <div class="container-100 button-container">
-                            <button type="button" class="btn btn-primary" style="width: 150px;">Upload</button>
-                            <button type="button" class="btn btn-secondary ms-2" style="width: 150px;">Print</button>
-                            <button type="button" class="btn btn-success ms-2" style="width: 150px;">Save</button>
-                            <button type="button" class="btn btn-danger ms-2" style="width: 150px;">Cancel</button>
-                        </div>
-                    </div>
-                </div>
+               
                 
             </div>
         </div>
@@ -426,28 +383,29 @@
             <div class="col-12">
                 <div class="row">
                     <div class="container mt-2">
-                        <p class="d-flex align-items-center">
+                        <p class="d-flex align-items-center ps-3">
                             <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/add--v1.png"
                                 alt="add--v1" data-toggle="collapse" href="#multiCollapseExample1" aria-expanded="false"
                                 aria-controls="multiCollapseExample1" style="cursor: pointer;">
                             <span class="heading ms-2" data-toggle="collapse" href="#multiCollapseExample1" role="button"
                                 aria-expanded="false" aria-controls="multiCollapseExample1">BILLING DETAILS</span>
                         </p>
+                    <div class="container">
                         <div class="row">
                             <div class="col">
                                 <div class="collapse multi-collapse" id="multiCollapseExample1">
                                     <div class="row">
-                                        <div class="col-4">
+                                        <div class="col-4 mt-3">
                                             <h6>BILLED AMOUNT</h6>
-                                            <input class="form-control" type="text" placeholder="Default input"
-                                                aria-label="default input example" style="height: 60px;">
+                                            <input class="form-control" type="text" placeholder="Billed amount"
+                                                aria-label="default input example" style="height: 60px; font-size: 18px;">
                                         </div>
-                                        <div class="col-4">
+                                        <div class="col-4 mt-3">
                                             <h6>AMOUNT SETTLEMENT</h6>
-                                            <input class="form-control" type="text" placeholder="Default input"
-                                                aria-label="default input example" style="height: 60px;">
+                                            <input class="form-control" type="text" placeholder="Settlement amount"
+                                                aria-label="default input example" style="height: 60px; font-size: 18px;">
                                         </div>
-                                        <div class="col-4">
+                                        <div class="col-4 mt-3">
                                             <h6>CHECK RECEIVED DATE</h6>
                                             <div class="date-wrapper position-relative">
                                                 <input type="text" class="form-control basicbox" placeholder="Enter date" id="datepicker7" style="font-size: 18px;">
@@ -462,26 +420,22 @@
                                         <textarea class="form-control" id="exampleFormControlTextarea1"
                                             rows="3"></textarea>
                                     </div>
-                                    <div class="row mt-4">
+                                    <div class="row mt-4  mb-3">
                                         <div class="col-12 d-flex justify-content-center">
                                             <div class="container-100 d-flex justify-content-center button-container">
                                                 <button type="button" class="btn btn-primary" style="width: 150px;">Upload</button>
                                                 <button type="button" class="btn btn-secondary ms-3" style="width: 150px;">Print</button>
                                                 <button type="button" class="btn btn-success ms-3" style="width: 150px;">Save</button>
                                                 <button type="button" class="btn btn-danger ms-3" style="width: 150px;">Cancel</button>
+                                                <button type="button" class="btn btn-secondary ms-3" style="width: 150px;">History</button>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row mt-4">
-                                        <div class="col-12 d-flex justify-content-center">
-                                            <div class="container-100 d-flex justify-content-center button-container">
-                                                <button type="button" class="btn btn-secondary" style="width: 150px;">History</button>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
+                    </div>
                     </div>
                 </div>
             </div>
