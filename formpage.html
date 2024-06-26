@@ -118,9 +118,9 @@
     </div>
     
     <div class="container ps-4 mb-5">
-        <select class="form-select lg-4 casestatus bg-green" aria-label="Default select example" id="colorSelect" style="font-size: 18px;">
-            <option selected value="" style="font-family: 'Inter'; font-size: 18px;">OPEN CASE</option>
-            <option value="1"  style="font-family: 'Inter'; font-size: 18px;">CLOSE CASE</option>
+        <select class="form-select lg-4 casestatus bg-green" aria-label="Default select example" id="colorSelect" style="font-size: 24px; font-weight: 600; align-items: center; text-align: center;">
+            <option selected value="" style="font-family: 'Inter'; font-size: 18px; font-weight: 600;" >OPEN CASE</option>
+            <option value="1"  style="font-family: 'Inter'; font-size: 18px; font-weight: 600;">CLOSE CASE</option>
         </select>
     </div>
     
@@ -199,11 +199,11 @@
                 <div class="row mt-4">
                     <!-- Empty Space: col-1 to col-6 -->
                     <div class="col-9 d-flex justify-content-end">
-                    <button type="button" class="btn btn-success" id="savestatus" style="font-size: 20px;">SAVE</button>
+                    <button type="button" class="btn btn-success" id="savestatus" style="font-size: 20px; font-weight: 600;">SAVE</button>
                     </div>
                     <!-- Buttons: col-7 to col-12 -->
                     <div class="col-3">
-                        <button type="button" class="btn btn-danger" id="savestatus" style="font-size: 20px; margin-left: 2px;">CANCEL</button>
+                        <button type="button" class="btn btn-danger" id="savestatus" style="font-size: 20px; font-weight: 600;margin-left: 2px;">CANCEL</button>
                     </div>
                 </div>
             </div>
@@ -229,9 +229,9 @@
     <div class="container mt-5">
         <div class="row align-items-center">
             <div class="col-3">
-                <h6 class="heading">ATTORNEY</h6>
+                <h6 class="heading" style="font-weight: 600;">ATTORNEY</h6>
             </div>
-            <div class="col-7" style="margin-left: -145px">
+            <div class="col-7" style="margin-left: -145px" >
                 <select class="form-select lg-3 attorney" style="font-size: 18px;">
                     <option selected value="">ATTORNEY NAME #1</option>
                     <option value="">ATTORNEY NAME #2</option>
@@ -242,7 +242,7 @@
     
         <div class="row align-items-center mt-4">
             <div class="col-3">
-                <h6 class="heading">LOP LETTERS</h6>
+                <h6 class="heading" style="font-weight: 600;">LOP LETTERS</h6>
             </div>
             <div class="col-9" style="margin-left: -170px;">
                 <div class="form-check form-check-inline">
@@ -299,7 +299,7 @@
                 <!-- Rest of your content remains unchanged -->
                 
                 <div class="row mt-3">
-                    <div class="col-3 ps-3 mb-3">
+                    <div class="col-3 mb-3">
                         <h6 class="heading">DATE OF ACCIDENT</h6>
                         <div class="date-wrapper position-relative">
                             <input type="text" class="form-control basicbox" placeholder="Enter date" id="datepicker4" style="font-size: 18px;">
@@ -345,22 +345,22 @@
                 <div class="row mt-3">
                     <div class="col-12">
                         <div class="row align-items-center">
-                            <div class="col-2">
-                                <h6 class="heading">LOP LETTERS</h6>
-                            </div>
-                            <div class="col-1 d-flex align-items-center">
+                            <div class="col-3">
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input custom-checkbox" type="checkbox" id="otherCheckbox1" value="option1">
-                                    <label class="form-check-label" for="otherCheckbox1">MD</label>
+                                    <label class="form-check-label" for="otherCheckbox1"></label>
+                                    <h6 class="heading" style="margin-left: 35px; margin-top: -5px; font-size: 20px;">LOP LETTERS</h6>
                                 </div>
+                                
                             </div>
-                            <div class="col-9 d-flex justify-content-start">
-                                <button type="button" class="btn btn-primary ms-4" style="width: 150px;">Schedule date</button>
-                                <button type="button" class="btn btn-secondary ms-4" style="width: 150px;">History</button>
-                                <button type="button" class="btn btn-primary ms-4" style="width: 150px;">Upload</button>
-                                <button type="button" class="btn btn-secondary ms-4" style="width: 150px;">Print</button>
-                                <button type="button" class="btn btn-success ms-4" style="width: 150px;">Save</button>
-                                <button type="button" class="btn btn-danger ms-4" style="width: 150px;">Cancel</button>
+                            
+                            <div class="col-9 d-flex justify-content-start" style="margin-top: 3px;">
+                                <button type="button" class="btn btn-primary" style="width: 170px;">Schedule date</button>
+                                <button type="button" class="btn btn-secondary ms-4" style="width: 170px;">History</button>
+                                <button type="button" class="btn btn-primary ms-4" style="width: 170px;">Upload</button>
+                                <button type="button" class="btn btn-secondary ms-4" style="width: 170px;">Print</button>
+                                <button type="button" class="btn btn-success ms-4" style="width: 170px;">Save</button>
+                                <button type="button" class="btn btn-danger ms-4" style="width: 170px;">Cancel</button>
                             </div>
                         </div>
                     </div>
@@ -384,11 +384,11 @@
                 <div class="row">
                     <div class="container mt-2">
                         <p class="d-flex align-items-center ps-3">
-                            <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/add--v1.png"
+                            <img width="30" height="30" src="/img/icons8-add-50.png"
                                 alt="add--v1" data-toggle="collapse" href="#multiCollapseExample1" aria-expanded="false"
                                 aria-controls="multiCollapseExample1" style="cursor: pointer;">
                             <span class="heading ms-2" data-toggle="collapse" href="#multiCollapseExample1" role="button"
-                                aria-expanded="false" aria-controls="multiCollapseExample1">BILLING DETAILS</span>
+                                aria-expanded="false" aria-controls="multiCollapseExample1" style="color: #339AF0;">BILLING DETAILS</span>
                         </p>
                     <div class="container">
                         <div class="row">
@@ -420,17 +420,7 @@
                                         <textarea class="form-control" id="exampleFormControlTextarea1"
                                             rows="3"></textarea>
                                     </div>
-                                    <div class="row mt-4  mb-3">
-                                        <div class="col-12 d-flex justify-content-center">
-                                            <div class="container-100 d-flex justify-content-center button-container">
-                                                <button type="button" class="btn btn-primary" style="width: 150px;">Upload</button>
-                                                <button type="button" class="btn btn-secondary ms-3" style="width: 150px;">Print</button>
-                                                <button type="button" class="btn btn-success ms-3" style="width: 150px;">Save</button>
-                                                <button type="button" class="btn btn-danger ms-3" style="width: 150px;">Cancel</button>
-                                                <button type="button" class="btn btn-secondary ms-3" style="width: 150px;">History</button>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    
                                     
                                 </div>
                             </div>
@@ -455,7 +445,7 @@
         
         <div class="row">
             <div class="col-6">
-                <div class="container-100 ps-5">
+                <div class="container-100 ps-3">
                     <div class="row">
                         <div class="col-12">
                             <h6 class="heading">PHYSICAL THERAPY</h6>
