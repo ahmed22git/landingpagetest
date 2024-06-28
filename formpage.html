@@ -1119,6 +1119,17 @@
         
         // Append the new content to the container
         document.getElementById('new-content-container').appendChild(newDiv);
+
+
+        var finalDiv = document.createElement('div');
+        finalDiv.className = 'container mt-3';
+        
+        var lineDiv = document.createElement('div');
+        lineDiv.className = 'line';
+        
+        finalDiv.appendChild(lineDiv);
+        
+        document.getElementById('new-content-container').appendChild(finalDiv);
     });
 </script>
     
@@ -1150,6 +1161,9 @@
             document.getElementById('otherCheckbox1').checked = this.checked;
         });
     </script>
+
+
+<!-- DATE PICKER -->
 
  <script>
     $(document).ready(function() {
