@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     
     
@@ -740,6 +741,13 @@
     </div>
 
 
+    <div class="container mt-3 ps-4" id="new-content-container">
+        <!-- New content will be appended here -->
+
+        <h1></h1>
+    </div>
+
+
     
 
 
@@ -780,52 +788,46 @@
     </div>
 
 
-    <div class="container mt-3 ps-4" id="new-content-container">
-        <!-- New content will be appended here -->
-
-        <h1></h1>
-    </div>
+    
 
 
     
 
-    <script>
-        document.getElementById('add-facility').addEventListener('click', function() {
-            // Find the next available number for the checkbox
-            var nextCheckboxNumber = 2; // Start numbering from 2
-    
-            // Check if there are existing checkboxes
-            var existingCheckboxes = document.querySelectorAll('.form-check-input');
-            if (existingCheckboxes.length > 0) {
-                // Get the number of the last checkbox
-                var lastCheckboxId = existingCheckboxes[existingCheckboxes.length - 1].id;
-                var lastCheckboxNumber = parseInt(lastCheckboxId.replace('inlineCheckbox', ''));
-                if (!isNaN(lastCheckboxNumber)) {
-                    nextCheckboxNumber = lastCheckboxNumber + 2; // Increment to get the next number
+  <script>
+       $(document).ready(function() {
+            var nextCheckboxNumber = 2; // Start numbering from 1
+
+            $('#add-facility').on('click', function() {
+                // Create a new checkbox element
+                var newCheckboxWrapper = $('<div>', { class: 'form-check form-check-inline' });
+                var newCheckbox = $('<input>', { 
+                    class: 'form-check-input custom-checkbox', 
+                    type: 'checkbox', 
+                    id: 'inlineCheckbox' + nextCheckboxNumber 
+                });
+                var newLabel = $('<label>', { 
+                    class: 'form-check-label', 
+                    for: newCheckbox.attr('id'), 
+                    text: 'FACILITY ' + nextCheckboxNumber,
+                    css: { fontWeight: 'normal' }
+                });
+
+                newCheckboxWrapper.append(newCheckbox).append(newLabel);
+
+                // Append the new checkbox after the last checkbox in the LOP LETTERS section
+                var lopLettersSection = $('.row.align-items-center.mt-4 .col-9');
+                if (lopLettersSection.length > 0) {
+                    lopLettersSection.append(newCheckboxWrapper);
+                    nextCheckboxNumber++; // Increment to get the next number
+                } else {
+                    console.error("LOP LETTERS section not found");
                 }
-            }
-    
-            // Create a new checkbox element
-            var newCheckboxWrapper = document.createElement('div');
-            newCheckboxWrapper.className = 'form-check form-check-inline';
-            var newCheckbox = document.createElement('input');
-            newCheckbox.className = 'form-check-input custom-checkbox';
-            newCheckbox.type = 'checkbox';
-            newCheckbox.id = 'inlineCheckbox' + nextCheckboxNumber;
-            var newLabel = document.createElement('label');
-            newLabel.className = 'form-check-label';
-            newLabel.htmlFor = newCheckbox.id;
-            newLabel.style.fontWeight = 'normal';
-            newLabel.innerText = 'FACILITY ' + nextCheckboxNumber;
-    
-            newCheckboxWrapper.appendChild(newCheckbox);
-            newCheckboxWrapper.appendChild(newLabel);
-    
-            // Append the new checkbox after the last checkbox in the LOP LETTERS section
-            var lopLettersSection = document.querySelector('.row.align-items-center.mt-4 .col-9');
-            lopLettersSection.appendChild(newCheckboxWrapper);
+            });
         });
     </script>
+
+
+  </script>
     
     
     
@@ -1149,7 +1151,7 @@
         });
     </script>
 
-<script>
+ <script>
     $(document).ready(function() {
         // Initialize first datepicker
         $("#datepicker1").datepicker({
@@ -1223,7 +1225,7 @@
             $(this).prev('input').focus();
         });
     });
-</script>
+ </script>
 
     
 
