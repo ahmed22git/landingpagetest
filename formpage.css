@@ -276,18 +276,18 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 /* Adjust the position of the custom icon */
-.form-select.lg-3::after {
+/* .form-select.lg-3::after {
     content: '';
     position: absolute;
     top: 50%;
-    right: 10px; /* Adjust position as needed */
+    right: 10px; 
     transform: translateY(-50%);
-    width: 30px; /* Width of the icon */
-    height: 30px; /* Height of the icon */
-    background-image: url('https://img.icons8.com/ios-glyphs/60/000000/expand-arrow--v1.png'); /* URL of the custom arrow image */
+    width: 30px; 
+    height: 30px; 
+     background-image: url('https://img.icons8.com/ios-glyphs/60/000000/expand-arrow--v1.png'); 
     background-repeat: no-repeat;
-    background-position: center; /* Center the icon */
-}
+    background-position: center; 
+} */
 .form-select.lg-4{
     -webkit-appearance: none;
     -moz-appearance: none;
