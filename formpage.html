@@ -136,6 +136,19 @@
         </select>
     </div>
 
+    <script>
+        document.getElementById('colorSelect').addEventListener('change', function() {
+            var selectElement = document.getElementById('colorSelect');
+            if (selectElement.value === "1") {
+                selectElement.classList.remove('bg-green');
+                selectElement.classList.add('bg-red');
+            } else {
+                selectElement.classList.remove('bg-red');
+                selectElement.classList.add('bg-green');
+            }
+        });
+    </script>
+
 
     <!-- DATE INFO ROW -->
     
