@@ -152,7 +152,7 @@
             </div>
             <div class="col-3 mb-3 mt-3">
                 <h6 class="heading">ACCIDENT TYPE</h6>
-                <select class="form-select accidenttype" style="font-size: 18px;">
+                <select class="form-select lg-3 accidenttype" style="font-size: 18px;">
                     <option selected value="">Commercial</option>
                     <option value="">Dynamic</option>
                     <option value="">Commercial</option>
@@ -160,7 +160,7 @@
             </div>
             <div class="col-3 pe-3 mb-3 mt-3">
                 <h6 class="heading">REFERRED FROM</h6>
-                <select class="form-select refferedtype" style="font-size: 18px;">
+                <select class="form-select lg-3 refferedtype" style="font-size: 18px;">
                     <option selected value="">REFERRED FROM NAME #1</option>
                     <option value="">REFERRED FROM NAME #2</option>
                     <option value="">REFERRED FROM NAME #3</option>
@@ -282,7 +282,7 @@
                     <h6 class="heading">MD CONSULT</h6>
                 </div>
                 <div class="col-7" style="margin-left: -145px;">
-                    <select class="form-select attorney" style="color: #A9A9A9; font-size: 18px;">
+                    <select class="form-select lg-3 attorney" style="color: #A9A9A9; font-size: 18px;">
                         <option selected value="">BUSINESS NAME / DR. NAME</option>
                         <option value="">BUSINESS NAME / DR. NAME</option>
                         <option value="">BUSINESS NAME / DR. NAME</option>
@@ -422,17 +422,20 @@
     </div>
 
 
+    <!-- PHYSICAL THERAPY ROW -->
+
+
     <div class="container ps-4 mt-5">
         <div class="row">
             <div class="row mb-3">
                 <div class="col-3 mt-3">
-                    <h6 class="heading">MD CONSULT</h6>
+                    <h6 class="heading">PHYSICAL THERAPY</h6>
                 </div>
                 <div class="col-7" style="margin-left: -145px;">
                     <select class="form-select attorney" style="color: #A9A9A9; font-size: 18px;">
-                        <option selected value="">BUSINESS NAME / DR. NAME</option>
-                        <option value="">BUSINESS NAME / DR. NAME</option>
-                        <option value="">BUSINESS NAME / DR. NAME</option>
+                        <option selected value="">PT BUSINESS NAME</option>
+                        <option value="">PT BUSINESS NAME</option>
+                        <option value="">PT BUSINESS NAME</option>
                     </select>
                 </div>
             </div>
@@ -507,6 +510,9 @@
     </div>
 
 
+    <!-- PHYSICAL THERAPY BILLING DETAILS -->
+
+
     <div class="container ps-4 mt-3">
         <div class="row">
             <div class="col-12">
@@ -514,15 +520,15 @@
                     <div class="container mt-2">
                         <p class="d-flex align-items-center ps-3">
                             <img width="30" height="30" src="img/icons8-add-50.png"
-                                alt="add--v1" data-toggle="collapse" href="#multiCollapseExample1" aria-expanded="false"
-                                aria-controls="multiCollapseExample1" style="cursor: pointer;">
-                            <span class="heading ms-2" data-toggle="collapse" href="#multiCollapseExample1" role="button"
-                                aria-expanded="false" aria-controls="multiCollapseExample1" style="color: #339AF0;">BILLING DETAILS</span>
+                                alt="add--v1" data-toggle="collapse" href="#multiCollapseExample2" aria-expanded="false"
+                                aria-controls="multiCollapseExample2" style="cursor: pointer;">
+                            <span class="heading ms-2" data-toggle="collapse" href="#multiCollapseExample2" role="button"
+                                aria-expanded="false" aria-controls="multiCollapseExample2" style="color: #339AF0;">BILLING DETAILS</span>
                         </p>
                     <div class="container">
                         <div class="row">
                             <div class="col">
-                                <div class="collapse multi-collapse" id="multiCollapseExample1">
+                                <div class="collapse multi-collapse" id="multiCollapseExample2">
                                     <div class="row">
                                         <div class="col-3 mt-3">
                                             <h6>BILLED AMOUNT</h6>
@@ -568,18 +574,20 @@
   
     </div>
 
+    <!-- PHARMAYC ROW -->
+
 
     <div class="container ps-4 mt-5">
         <div class="row">
             <div class="row mb-3">
                 <div class="col-3 mt-3">
-                    <h6 class="heading">MD CONSULT</h6>
+                    <h6 class="heading">PHARMACY</h6>
                 </div>
                 <div class="col-7" style="margin-left: -145px;">
                     <select class="form-select attorney" style="color: #A9A9A9; font-size: 18px;">
-                        <option selected value="">BUSINESS NAME / DR. NAME</option>
-                        <option value="">BUSINESS NAME / DR. NAME</option>
-                        <option value="">BUSINESS NAME / DR. NAME</option>
+                        <option selected value="">RX NAME</option>
+                        <option value="">RX NAME</option>
+                        <option value="">RX NAME</option>
                     </select>
                 </div>
             </div>
@@ -652,17 +660,19 @@
   
     </div>
 
+    <!-- FACILTY ROW -->
+
     <div class="container ps-4 mt-5">
         <div class="row">
             <div class="row mb-3">
                 <div class="col-3 mt-3">
-                    <h6 class="heading">MD CONSULT</h6>
+                    <h6 class="heading">FACILITY</h6>
                 </div>
                 <div class="col-7" style="margin-left: -145px;">
                     <select class="form-select attorney" style="color: #A9A9A9; font-size: 18px;">
-                        <option selected value="">BUSINESS NAME / DR. NAME</option>
-                        <option value="">BUSINESS NAME / DR. NAME</option>
-                        <option value="">BUSINESS NAME / DR. NAME</option>
+                        <option selected value="">FACILITY NAME</option>
+                        <option value="">FACILITY NAME</option>
+                        <option value="">FACILITY NAME</option>
                     </select>
                 </div>
             </div>
@@ -837,7 +847,7 @@
     document.querySelector('.add-facility-btn').addEventListener('click', function() {
         // Create a new div element
         var newDiv = document.createElement('div');
-        newDiv.className = 'container ps-4 mt-5'; // Adding classes to match the container style
+        newDiv.className = 'container mt-5'; // Adding classes to match the container style
         
         // Adding MD CONSULT section
         var mdConsultRow = document.createElement('div');
@@ -848,7 +858,7 @@
         
         var mdConsultHeading = document.createElement('h6');
         mdConsultHeading.className = 'heading';
-        mdConsultHeading.innerText = 'MD CONSULT';
+        mdConsultHeading.innerText = 'FACILITY';
         
         mdConsultCol3.appendChild(mdConsultHeading);
         mdConsultRow.appendChild(mdConsultCol3);
@@ -864,15 +874,15 @@
         
         var option1 = document.createElement('option');
         option1.value = '';
-        option1.innerText = 'BUSINESS NAME / DR. NAME';
+        option1.innerText = 'FACILITY NAME';
         
         var option2 = document.createElement('option');
         option2.value = '';
-        option2.innerText = 'BUSINESS NAME / DR. NAME';
+        option2.innerText = 'FACILITY NAME';
         
         var option3 = document.createElement('option');
         option3.value = '';
-        option3.innerText = 'BUSINESS NAME / DR. NAME';
+        option3.innerText = 'FACILITY NAME';
         
         mdConsultSelect.appendChild(option1);
         mdConsultSelect.appendChild(option2);
