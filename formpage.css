@@ -265,7 +265,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     -moz-appearance: none;
     appearance: none;
     background-color: transparent;
-    background-image: url('/img/icons8-dropdown-64b.png'); /* URL of the custom arrow image */
+    background-image: url('img/icons8-dropdown-64b.png'); /* URL of the custom arrow image */
     background-repeat: no-repeat;
     background-position: right 10px center; /* Adjust position as needed */
     padding-right: 40px; /* Adjust padding to fit the icon */
