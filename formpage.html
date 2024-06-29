@@ -841,7 +841,172 @@
     
     
     
-    
+  <script>
+    $(document).ready(function() {
+        // Initialize first datepicker
+        $("#datepicker1").datepicker({
+            showOn: "focus",
+            changeMonth: true,
+            changeYear: true,
+            showButtonPanel: true,
+            dateFormat: 'mm/dd/yy'
+        });
+
+        // Initialize second datepicker
+        $("#datepicker2").datepicker({
+            showOn: "focus",
+            changeMonth: true,
+            changeYear: true,
+            showButtonPanel: true,
+            dateFormat: 'mm/dd/yy'
+        });
+        $("#datepicker3").datepicker({
+            showOn: "focus",
+            changeMonth: true,
+            changeYear: true,
+            showButtonPanel: true,
+            dateFormat: 'mm/dd/yy'
+        });
+        $("#datepicker4").datepicker({
+            showOn: "focus",
+            changeMonth: true,
+            changeYear: true,
+            showButtonPanel: true,
+            dateFormat: 'mm/dd/yy'
+        });
+        $("#datepicker5").datepicker({
+            showOn: "focus",
+            changeMonth: true,
+            changeYear: true,
+            showButtonPanel: true,
+            dateFormat: 'mm/dd/yy'
+        });
+        $("#datepicker6").datepicker({
+            showOn: "focus",
+            changeMonth: true,
+            changeYear: true,
+            showButtonPanel: true,
+            dateFormat: 'mm/dd/yy'
+        });
+        $("#datepicker7").datepicker({
+            showOn: "focus",
+            changeMonth: true,
+            changeYear: true,
+            showButtonPanel: true,
+            dateFormat: 'mm/dd/yy'
+        });
+        $("#datepicker8").datepicker({
+            showOn: "focus",
+            changeMonth: true,
+            changeYear: true,
+            showButtonPanel: true,
+            dateFormat: 'mm/dd/yy'
+        });
+        $("#datepicker9").datepicker({
+            showOn: "focus",
+            changeMonth: true,
+            changeYear: true,
+            showButtonPanel: true,
+            dateFormat: 'mm/dd/yy'
+        });
+        $("#datepicker10").datepicker({
+            showOn: "focus",
+            changeMonth: true,
+            changeYear: true,
+            showButtonPanel: true,
+            dateFormat: 'mm/dd/yy'
+        });
+        $("#datepicker11").datepicker({
+            showOn: "focus",
+            changeMonth: true,
+            changeYear: true,
+            showButtonPanel: true,
+            dateFormat: 'mm/dd/yy'
+        });
+        $("#datepicker12").datepicker({
+            showOn: "focus",
+            changeMonth: true,
+            changeYear: true,
+            showButtonPanel: true,
+            dateFormat: 'mm/dd/yy'
+        });
+        $("#datepicker13").datepicker({
+            showOn: "focus",
+            changeMonth: true,
+            changeYear: true,
+            showButtonPanel: true,
+            dateFormat: 'mm/dd/yy'
+        });
+        $("#datepicker14").datepicker({
+            showOn: "focus",
+            changeMonth: true,
+            changeYear: true,
+            showButtonPanel: true,
+            dateFormat: 'mm/dd/yy'
+        });
+        $("#datepicker15").datepicker({
+            showOn: "focus",
+            changeMonth: true,
+            changeYear: true,
+            showButtonPanel: true,
+            dateFormat: 'mm/dd/yy'
+        });
+        $("#datepicker16").datepicker({
+            showOn: "focus",
+            changeMonth: true,
+            changeYear: true,
+            showButtonPanel: true,
+            dateFormat: 'mm/dd/yy'
+        });
+        $("#datepicker17").datepicker({
+            showOn: "focus",
+            changeMonth: true,
+            changeYear: true,
+            showButtonPanel: true,
+            dateFormat: 'mm/dd/yy'
+        });
+        $("#datepicker18").datepicker({
+            showOn: "focus",
+            changeMonth: true,
+            changeYear: true,
+            showButtonPanel: true,
+            dateFormat: 'mm/dd/yy'
+        });
+        $("#datepicker19").datepicker({
+            showOn: "focus",
+            changeMonth: true,
+            changeYear: true,
+            showButtonPanel: true,
+            dateFormat: 'mm/dd/yy'
+        });
+        $("#datepicker20").datepicker({
+            showOn: "focus",
+            changeMonth: true,
+            changeYear: true,
+            showButtonPanel: true,
+            dateFormat: 'mm/dd/yy'
+        });
+
+        // Custom CSS to enlarge the datepicker
+        $.datepicker._updateDatepicker_original = $.datepicker._updateDatepicker;
+        $.datepicker._updateDatepicker = function(inst) {
+            $.datepicker._updateDatepicker_original(inst);
+            var buttonPane = $(this).datepicker("widget").find(".ui-datepicker-buttonpane");
+            buttonPane.css({
+                'height': '60px',
+                'width': '250px'
+            });
+            $(this).datepicker("widget").css({
+                'font-size': '1.2em'  // Increase overall font size
+            });
+        };
+
+        // Trigger datepicker on calendar icon click for both instances
+        $(".calendar-icon").on("click", function() {
+            $(this).prev('input').focus();
+        });
+    });
+ </script>   
 
 <script>
     document.querySelector('.add-facility-btn').addEventListener('click', function() {
@@ -911,7 +1076,7 @@
         dateInput1.type = 'text';
         dateInput1.className = 'form-control basicbox';
         dateInput1.placeholder = 'Enter date';
-        dateInput1.id = 'datepicker4';
+        dateInput1.classList.add('datepicker');  // Updated this line
         dateInput1.style.fontSize = '18px';
         
         var calendarIcon1 = document.createElement('span');
@@ -945,7 +1110,7 @@
         dateInput2.type = 'text';
         dateInput2.className = 'form-control basicbox';
         dateInput2.placeholder = 'Enter date';
-        dateInput2.id = 'datepicker5';
+        dateInput2.classList.add('datepicker');  // Updated this line
         dateInput2.style.fontSize = '18px';
         
         var calendarIcon2 = document.createElement('span');
@@ -979,7 +1144,7 @@
         dateInput3.type = 'text';
         dateInput3.className = 'form-control basicbox';
         dateInput3.placeholder = 'Enter date';
-        dateInput3.id = 'datepicker6';
+        dateInput3.classList.add('datepicker');  // Updated this line
         dateInput3.style.fontSize = '18px';
         
         var calendarIcon3 = document.createElement('span');
@@ -1140,8 +1305,12 @@
         finalDiv.appendChild(lineDiv);
         
         document.getElementById('new-content-container').appendChild(finalDiv);
+
+        // Initialize datepickers for the new date inputs
+        $('.datepicker').datepicker();
     });
 </script>
+
     
     
 
@@ -1175,151 +1344,7 @@
 
 <!-- DATE PICKER -->
 
- <script>
-    $(document).ready(function() {
-        // Initialize first datepicker
-        $("#datepicker1").datepicker({
-            showOn: "focus",
-            changeMonth: true,
-            changeYear: true,
-            showButtonPanel: true,
-            dateFormat: 'mm/dd/yy'
-        });
-
-        // Initialize second datepicker
-        $("#datepicker2").datepicker({
-            showOn: "focus",
-            changeMonth: true,
-            changeYear: true,
-            showButtonPanel: true,
-            dateFormat: 'mm/dd/yy'
-        });
-        $("#datepicker3").datepicker({
-            showOn: "focus",
-            changeMonth: true,
-            changeYear: true,
-            showButtonPanel: true,
-            dateFormat: 'mm/dd/yy'
-        });
-        $("#datepicker4").datepicker({
-            showOn: "focus",
-            changeMonth: true,
-            changeYear: true,
-            showButtonPanel: true,
-            dateFormat: 'mm/dd/yy'
-        });
-        $("#datepicker5").datepicker({
-            showOn: "focus",
-            changeMonth: true,
-            changeYear: true,
-            showButtonPanel: true,
-            dateFormat: 'mm/dd/yy'
-        });
-        $("#datepicker6").datepicker({
-            showOn: "focus",
-            changeMonth: true,
-            changeYear: true,
-            showButtonPanel: true,
-            dateFormat: 'mm/dd/yy'
-        });
-        $("#datepicker7").datepicker({
-            showOn: "focus",
-            changeMonth: true,
-            changeYear: true,
-            showButtonPanel: true,
-            dateFormat: 'mm/dd/yy'
-        });
-        $("#datepicker8").datepicker({
-            showOn: "focus",
-            changeMonth: true,
-            changeYear: true,
-            showButtonPanel: true,
-            dateFormat: 'mm/dd/yy'
-        });
-        $("#datepicker9").datepicker({
-            showOn: "focus",
-            changeMonth: true,
-            changeYear: true,
-            showButtonPanel: true,
-            dateFormat: 'mm/dd/yy'
-        });
-        $("#datepicker10").datepicker({
-            showOn: "focus",
-            changeMonth: true,
-            changeYear: true,
-            showButtonPanel: true,
-            dateFormat: 'mm/dd/yy'
-        });
-        $("#datepicker11").datepicker({
-            showOn: "focus",
-            changeMonth: true,
-            changeYear: true,
-            showButtonPanel: true,
-            dateFormat: 'mm/dd/yy'
-        });
-        $("#datepicker12").datepicker({
-            showOn: "focus",
-            changeMonth: true,
-            changeYear: true,
-            showButtonPanel: true,
-            dateFormat: 'mm/dd/yy'
-        });
-        $("#datepicker13").datepicker({
-            showOn: "focus",
-            changeMonth: true,
-            changeYear: true,
-            showButtonPanel: true,
-            dateFormat: 'mm/dd/yy'
-        });
-        $("#datepicker14").datepicker({
-            showOn: "focus",
-            changeMonth: true,
-            changeYear: true,
-            showButtonPanel: true,
-            dateFormat: 'mm/dd/yy'
-        });
-        $("#datepicker15").datepicker({
-            showOn: "focus",
-            changeMonth: true,
-            changeYear: true,
-            showButtonPanel: true,
-            dateFormat: 'mm/dd/yy'
-        });
-        $("#datepicker16").datepicker({
-            showOn: "focus",
-            changeMonth: true,
-            changeYear: true,
-            showButtonPanel: true,
-            dateFormat: 'mm/dd/yy'
-        });
-        $("#datepicker17").datepicker({
-            showOn: "focus",
-            changeMonth: true,
-            changeYear: true,
-            showButtonPanel: true,
-            dateFormat: 'mm/dd/yy'
-        });
-
-        // Custom CSS to enlarge the datepicker
-        $.datepicker._updateDatepicker_original = $.datepicker._updateDatepicker;
-        $.datepicker._updateDatepicker = function(inst) {
-            $.datepicker._updateDatepicker_original(inst);
-            var buttonPane = $(this).datepicker("widget").find(".ui-datepicker-buttonpane");
-            buttonPane.css({
-                'height': '60px',
-                'width': '250px'
-            });
-            $(this).datepicker("widget").css({
-                'font-size': '1.2em'  // Increase overall font size
-            });
-        };
-
-        // Trigger datepicker on calendar icon click for both instances
-        $(".calendar-icon").on("click", function() {
-            $(this).prev('input').focus();
-        });
-    });
- </script>
+ 
 
     
 
