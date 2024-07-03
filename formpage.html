@@ -24,6 +24,9 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
     
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
     
     
 
@@ -34,17 +37,20 @@
 
     <nav class="navbar navbar-expand-lg" id="custom-navbar">
         <div class="container">
-            <div class="navbar-nav me-auto">
-                <a class="nav-link active" aria-current="page" href="#">File</a>
-                <a class="nav-link" href="#">Edit</a>
-                <a class="nav-link" href="#">Help</a>
-            </div>
-            <a class="navbar-brand mx-auto" href="#" style="font-weight: 600; font-size: 22px;">NEW CASE</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <a class="navbar-brand mx-auto" href="#" style="font-weight: 600; font-size: 22px;">NEW CASE</a>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav me-auto">
+                    <a class="nav-link active" aria-current="page" href="#">File</a>
+                    <a class="nav-link" href="#">Edit</a>
+                    <a class="nav-link" href="#">Help</a>
+                </div>
+            </div>
         </div>
     </nav>
+
 
 
     <!-- PATIENT INFO HEADING  -->
@@ -53,20 +59,18 @@
     
     <div class="container mt-5 id">
         <div class="row align-items-center">
-            <div class="col-2 ps-3">
+            <div class="col-6 col-md-2 ps-3">
                 <p id="id-text">ID # 001</p>
-                
             </div>
-            <div class="col-8 text-center">
+            <div class="col-6 col-md-8 text-center">
                 <p id="id-text">PATIENT INFO</p>
-                
             </div>
         </div>
     </div>
 
     <!-- PATIENT INFO FORM -->
     
-    <div class="container-xxl w-100 detail-box">
+    <div class="container detail-box">
         <div class="container">
             <div class="row no-gutters">
                 <div class="col-6 ps-3  mb-3" style="margin-top: 32px;">
@@ -154,35 +158,35 @@
     
     <div class="container ps-4">
         <div class="row pe-4">
-            <div class="col-3 ps-3 mb-3 mt-3">
+            <div class="col-md-3 mb-3 mt-3">
                 <h6 class="heading">DATE OF ACCIDENT</h6>
                 <div class="date-wrapper position-relative">
-                    <input type="text" class="form-control basicbox" placeholder="Enter date" id="datepicker2" style="font-size: 18px;">
+                    <input type="text" class="form-control basicbox" placeholder="Enter date" id="datepicker2">
                     <span class="calendar-icon">
                         <img src="img/icons8-calendar-96.png" alt="calendar-icon" width="24" height="24">
                     </span>
                 </div>
             </div>
-            <div class="col-3 mb-3 mt-3">
+            <div class="col-md-3 mb-3 mt-3">
                 <h6 class="heading">ACCIDENT TYPE</h6>
-                <select class="form-select lg-3 accidenttype" style="font-size: 18px;">
+                <select class="form-select lg-3 accidenttype">
                     <option selected value="">Commercial</option>
                     <option value="">Dynamic</option>
                     <option value="">Commercial</option>
                 </select>
             </div>
-            <div class="col-3 pe-3 mb-3 mt-3">
+            <div class="col-md-3 mb-3 mt-3">
                 <h6 class="heading">REFERRED FROM</h6>
-                <select class="form-select lg-3 refferedtype" style="font-size: 18px;">
+                <select class="form-select lg-3 refferedtype">
                     <option selected value="">REFERRED FROM NAME #1</option>
                     <option value="">REFERRED FROM NAME #2</option>
                     <option value="">REFERRED FROM NAME #3</option>
                 </select>
             </div>
-            <div class="col-3 pe-3 mb-3 mt-3">
+            <div class="col-md-3 mb-3 mt-3">
                 <h6 class="heading">REF. DATE</h6>
                 <div class="date-wrapper position-relative">
-                    <input type="text" class="form-control basicbox" placeholder="Enter date" id="datepicker3" style="font-size: 18px;">
+                    <input type="text" class="form-control basicbox" placeholder="Enter date" id="datepicker3">
                     <span class="calendar-icon">
                         <img src="img/icons8-calendar-96.png" alt="calendar-icon" width="24" height="24">
                     </span>
@@ -197,24 +201,28 @@
     
 <!-- SAVE AND CANCEL BUTTONS -->
 
-    <div class="container">
-        <div class="row pe-4">
-         
-            <div class="col-12">
-                <div class="row mt-4">
-                    <!-- Empty Space: col-1 to col-6 -->
-                    <div class="col-9 d-flex justify-content-end">
-                    <button type="button" class="btn btn-success" id="savestatus" style="font-size: 20px; font-weight: 600;">SAVE</button>
-                    </div>
-                    <!-- Buttons: col-7 to col-12 -->
-                    <div class="col-3">
-                        <button type="button" class="btn btn-danger" id="savestatus" style="font-size: 20px; font-weight: 600;margin-left: 2px;">CANCEL</button>
-                    </div>
+<div class="container">
+    <div class="row pe-4">
+     
+        <div class="col-12">
+            <div class="row mt-4">
+                <!-- Empty Space: col-1 to col-6 -->
+                <div class="col-9 d-flex justify-content-end">
+                <button type="button" class="btn btn-success" id="savestatus" style="font-size: 20px; font-weight: 600;">SAVE</button>
+                </div>
+                <!-- Buttons: col-7 to col-12 -->
+                <div class="col-3">
+                    <button type="button" class="btn btn-danger" id="savestatus" style="font-size: 20px; font-weight: 600;margin-left: 2px;">CANCEL</button>
                 </div>
             </div>
-         
         </div>
+     
     </div>
+</div>
+
+
+
+
     
 
     <div class="container mt-5">
@@ -230,7 +238,7 @@
             <div class="col-3">
                 <h6 class="headings">ATTORNEY</h6>
             </div>
-            <div class="col-7" style="margin-left: -145px;">
+            <div class="col-7 attorney-wrapper" style="margin-left: -145px;">
                 <select class="form-select lg-3 attorney ms-3" style="font-size: 18px;">
                     <option selected value="">ATTORNEY NAME #1</option>
                     <option value="">ATTORNEY NAME #2</option>
@@ -243,7 +251,7 @@
             <div class="col-3">
                 <h6 class="heading" style="font-weight: 600;">LOP LETTERS</h6>
             </div>
-            <div class="col-9" style="margin-left: -170px;">
+            <div class="col-9 attorney-wrapper" style="margin-left: -170px;">
                 <div class="form-check form-check-inline ms-3">
                     <input class="form-check-input custom-checkbox" type="checkbox" id="inlineCheckbox1" value="option1">
                     <label class="form-check-label" for="inlineCheckbox1" style="font-weight: normal;">MD</label>
@@ -277,11 +285,11 @@
 
     <div class="container ps-4 mt-5">
         <div class="row">
-            <div class="row mb-3">
+            <div class="row mb-3 md-consult-wrapper">
                 <div class="col-3 mt-3">
                     <h6 class="headings">MD CONSULT</h6>
                 </div>
-                <div class="col-7" style="margin-left: -145px;">
+                <div class="col-7 attorney-wrapper" style="margin-left: -145px;">
                     <select class="form-select lg-3 attorney ms-3" style="color: grey; font-size: 18px;">
                         <option selected value="">BUSINESS NAME / DR. NAME</option>
                         <option value="">BUSINESS NAME / DR. NAME</option>
@@ -289,7 +297,7 @@
                     </select>
                 </div>
             </div>
-    
+     
             <div class="row pe-4 mt-3">
                 <div class="col-3 mb-3">
                     <h6 class="heading">DATE OF ACCIDENT</h6>
@@ -364,7 +372,7 @@
                 <div class="row">
                     <div class="container mt-2">
                         <p class="d-flex align-items-center ps-3">
-                            <img width="30" height="30" src="img/icons8-add-50.png"
+                            <img width="30" height="30" src="img/icons8-add-96 (1).png"
                                 alt="add--v1" data-toggle="collapse" href="#multiCollapseExample1" aria-expanded="false"
                                 aria-controls="multiCollapseExample1" style="cursor: pointer;">
                             <span class="heading ms-2" data-toggle="collapse" href="#multiCollapseExample1" role="button"
@@ -430,7 +438,7 @@
                 <div class="col-3 mt-3">
                     <h6 class="headings">PHYSICAL THERAPY</h6>
                 </div>
-                <div class="col-7" style="margin-left: -145px;">
+                <div class="col-7 attorney-wrapper" style="margin-left: -145px;">
                     <select class="form-select lg-3 attorney ms-3" style="color: grey; font-size: 18px;">
                         <option selected value="">PT BUSINESS NAME</option>
                         <option value="">PT BUSINESS NAME</option>
@@ -517,7 +525,7 @@
                 <div class="row">
                     <div class="container mt-2">
                         <p class="d-flex align-items-center ps-3">
-                            <img width="30" height="30" src="img/icons8-add-50.png"
+                            <img width="30" height="30" src="img/icons8-add-96 (1).png"
                                 alt="add--v1" data-toggle="collapse" href="#multiCollapseExample2" aria-expanded="false"
                                 aria-controls="multiCollapseExample2" style="cursor: pointer;">
                             <span class="heading ms-2" data-toggle="collapse" href="#multiCollapseExample2" role="button"
@@ -566,7 +574,7 @@
     </div>
 
 
-    <div class="container mt-3">
+    <div class="container mt-2">
 
         <div class="line"></div>
   
@@ -581,7 +589,7 @@
                 <div class="col-3 mt-3">
                     <h6 class="headings">PHARMACY</h6>
                 </div>
-                <div class="col-7" style="margin-left: -145px;">
+                <div class="col-7 attorney-wrapper" style="margin-left: -145px;">
                     <select class="form-select lg-3 attorney ms-3" style="color: grey; font-size: 18px;">
                         <option selected value="">RX NAME</option>
                         <option value="">RX NAME</option>
@@ -665,7 +673,7 @@
                 <div class="col-3 mt-3">
                     <h6 class="headings">FACILITY</h6>
                 </div>
-                <div class="col-7" style="margin-left: -145px;">
+                <div class="col-7 attorney-wrapper" style="margin-left: -145px;">
                     <select class="form-select lg-3  attorney ms-3" style="color: grey; font-size: 18px;">
                         <option selected value="">FACILITY NAME</option>
                         <option value="">FACILITY NAME</option>
@@ -761,9 +769,9 @@
     <div class="container mt-3 ps-4">
         <div class="row">
             <div class="col-2">
-                <div class="row ps-3">
-                    <h6 class="heading add-facility-btn" style="margin-top: 20px; color: #339AF0;">
-                        <img width="30" height="30" src="img/icons8-add-50.png" alt="add-icon" id="add-facility"/>
+                <div class="row ps-3 ">
+                    <h6 class="heading add-facility-btn" style="margin-top: 20px; color: #339AF0" id="add-facility">
+                        <img width="30" height="30" src="img/icons8-add-96 (1).png" alt="add-icon" id="add-facility"/>
                         ADD FACILITY
                     </h6>
                 </div>
@@ -771,8 +779,8 @@
             </div>
             <div class="col-2">
                 <div class="row">
-                    <h6 class="heading remove-facility-btn" style="margin-top: 20px; color: #339AF0;">
-                        <img width="30" height="30" src="img/icons8-add-50.png" alt="add-icon" id="remove-facility-btn"/>
+                    <h6 class="heading remove-facility-btn" style="margin-top: 20px; color: #339AF0;" id="remove-facility-btn">
+                        <img width="30" height="30" src="img/icons8-minus-96.png" alt="add-icon" id="remove-facility-btn"/>
                         REMOVE FACILITY
                     </h6>
                 </div>
@@ -788,26 +796,19 @@
     </div>
 
 
-   <!-- SAVE AND CANVEL -->
+   <!-- SAVE AND CANCEL -->
 
-    <div class="container">
-        <div class="row pe-4">
-         
-            <div class="col-12">
-                <div class="row mt-4">
-                    <!-- Empty Space: col-1 to col-6 -->
-                    <div class="col-9 d-flex justify-content-end">
-                    <button type="button" class="btn btn-success" id="savestatus" style="font-size: 20px; font-weight: 600;">SAVE</button>
-                    </div>
-                    <!-- Buttons: col-7 to col-12 -->
-                    <div class="col-3">
-                        <button type="button" class="btn btn-danger" id="savestatus" style="font-size: 20px; font-weight: 600;margin-left: 2px;">CANCEL</button>
-                    </div>
-                </div>
+   <div class="container mt-5">
+    <div class="row pe-4">
+        <div class="col-12 mb-5">
+            <div class="d-flex justify-content-center button-container">
+                <button type="button" class="btn btn-success" id="savestatus" style="font-size: 20px; font-weight: 600;">SAVE</button>
+                <button type="button" class="btn btn-danger ms-3" id="savestatus" style="font-size: 20px; font-weight: 600;">CANCEL</button>
+                <button type="button" class="btn btn-secondary ms-3" id="savestatus" style="font-size: 20px; font-weight: 600;">PRINT</button>
             </div>
-         
         </div>
     </div>
+</div>
     
 
 
@@ -838,16 +839,8 @@
             document.getElementById('otherCheckbox4').checked = this.checked;
         });
     </script>
-    <script>
-        var dynamicCheckboxId = 'lopletters2';
-
-document.getElementById(newCheckbox).addEventListener('change', function() {
-    // Construct the corresponding lop letter checkbox id
-    var lopLetterCheckboxId = 'lopletter' + dynamicCheckboxId.slice(-1);
-
-    // Toggle the checked state of the corresponding lop letter checkbox
-    document.getElementById(lopLetterCheckboxId).checked = this.checked;
-    </script>
+   
+        
     
 
 
@@ -1023,7 +1016,7 @@ document.getElementById(newCheckbox).addEventListener('change', function() {
 </script> 
 
 
-<!-- CHEKKBOX -->
+<!-- CHEKKBOX INCREMENTING  -->
 
 
 <script>
@@ -1080,14 +1073,7 @@ document.getElementById(newCheckbox).addEventListener('change', function() {
 
 </script>
 
-
-
- 
- 
- 
-
 <!-- ADD FACILTY DIV SECTION -->
-
 
 <script>
         
@@ -1099,7 +1085,7 @@ document.getElementById(newCheckbox).addEventListener('change', function() {
 
     // Adding MD CONSULT section
     var mdConsultRow = document.createElement('div');
-    mdConsultRow.className = 'row mb-3';
+    mdConsultRow.className = 'row mb-5 mt-5';
 
     var mdConsultCol3 = document.createElement('div');
     mdConsultCol3.className = 'col-3 mt-3';
@@ -1376,19 +1362,15 @@ newDiv.appendChild(lopRow);
     
 
     // Add the container with the line at the end
-    var finalDiv = document.createElement('div');
-    finalDiv.className = 'container mt-3';
+    
 
     var lineDiv = document.createElement('div');
-    lineDiv.className = 'line';
+    lineDiv.className = 'line mt-5';
 
     newDiv.appendChild(lineDiv);
 
     document.getElementById('new-content-container').appendChild(finalDiv);
-});
-
-// Event listener for the existing "REMOVE FACILITY" button
-document.querySelector('#remove-facility-btn').addEventListener('click', function() {
+}); document.querySelector('#remove-facility-btn').addEventListener('click', function() {
     var facilities = document.querySelectorAll('.facility-container');
     if (facilities.length > 0) {
         var lastFacility = facilities[facilities.length - 1];
@@ -1402,13 +1384,6 @@ document.querySelector('#remove-facility-btn').addEventListener('click', functio
 
  
 </script>
-
-    
-
-
-
-    
-
 
 </body>
 </html>

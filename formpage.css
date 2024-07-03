@@ -1,7 +1,50 @@
 body {
     font-family: 'Inter';
     }
-
+    @media (max-width: 768px) {
+        .navbar-brand {
+            font-size: 18px;
+        }
+        .nav-link {
+            font-size: 14px;
+        }
+    }
+    @media (max-width: 768px) {
+        
+    }
+    
+    
+    @media (max-width: 1400px) {
+        .attorney-wrapper {
+            margin-left: -50px !important; /* Adjust the margin as needed */
+            
+        }
+        
+    }
+    
+    @media (max-width: 1200px) {
+        .attorney-wrapper {
+            margin-left: -50px !important; /* Adjust the margin as needed */
+            
+        }
+        
+        
+    }
+    @media (max-width: 1200px) {
+        #savestatus{
+            width: 150px !important;
+            height: 58px;
+        }
+        
+        
+    }
+    @media (max-width: 1400px) {
+        #savestatus{
+            width: 250px !important;
+            height: 58px;
+        }
+        
+    }
 /* NAVBAR */
 
 .navbar .container-fluid {
@@ -14,6 +57,8 @@ body {
 #custom-navbar {
     background-color: #F5F5F7;
 }
+
+
 
   
 .navbar-brand {
@@ -42,14 +87,13 @@ body {
     margin-left: 12px;
 }
 
-/* .row.no-gutters {
-    margin-right: 0;
-    margin-left: 0;
+
+
+#savestatus{
+    width: 295px;
+    height: 58px;
 }
-.row.no-gutters > [class*='col-'] {
-    padding-right: 0;
-    padding-left: 0;
-} */
+
   
 .detail-box{
   
@@ -59,6 +103,7 @@ body {
     background-color: #F5F5F7;
     
 }
+
 
 
 .casestatus {
@@ -74,11 +119,11 @@ body {
 
 
 .bg-green {
-    background-color: green !important;
+    background-color: #198754 !important;
     color: white !important;
 }
  .bg-red {
-    background-color: red !important;
+    background-color: #DC3545 !important;
     color: white !important;
 }
 .heading{
@@ -110,10 +155,7 @@ body {
     background-color: #e2e2e4;
 }
 
-#savestatus{
-    width: 295px;
-    height: 58px;
-}
+
 .discardbutton{
     margin-left: 106px;
 }
@@ -137,11 +179,11 @@ body {
     height: 58px; 
 }
 .border-visible {
-    border-left: 1px solid #E7E7E8; /* Black border */
-    padding: 15px; /* Optional padding for better visibility */
-    border-radius: 3px; /* Optional rounded corners */
+    border-left: 1px solid #E7E7E8; 
+    padding: 15px; 
+    border-radius: 3px; 
     
-     /* Optional padding for better visibility */
+    
     
 }
 
@@ -151,7 +193,7 @@ body {
 }
 
 .custom-width {
-    width: 100%; /* Adjust as needed */
+    width: 100%; 
 }   
         
 .input[type=date]:required:invalid::-webkit-datetime-edit {
@@ -194,14 +236,14 @@ body {
     height: 25px;
     border: 2px solid red;
     border-radius: 3px;
-    background-color: red; /* Initial background color */
-    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+    background-color: red; 
+    transition: background-color 0.3s ease, border-color 0.3s ease;
     
 }
 
 .custom-checkbox:checked + .form-check-label:before {
-    background-color: green; /* Change background color when checked */
-    border-color: green; /* Change border color when checked */
+    background-color: green; 
+    border-color: green; 
     
 }
 
@@ -219,28 +261,28 @@ body {
 }
 
 
-/* Change the icon color for WebKit browsers */
+
 input[type="date"]::-webkit-calendar-picker-indicator {
     filter: invert(50%) sepia(100%) saturate(500%) hue-rotate(190deg);
     cursor: pointer;
 }
 
-/* Change the icon color for Mozilla Firefox */
+
 input[type="date"]::-moz-focus-inner {
     border: 0;
 }
 
 input[type="date"]::-moz-focus-outer {
-    color: red; /* Replace 'red' with your desired color */
+    color: red; 
 }
 
-/* Change the icon color for Internet Explorer and Edge */
+
 input[type="date"]::-ms-expand {
-    color: red; /* Replace 'red' with your desired color */
+    color: red; 
     cursor: pointer;
 }
 
-/* General styling for the input */
+
 input[type="date"] {
     position: relative;
     padding: 10px;
@@ -256,80 +298,50 @@ input[type="date"]:focus {
     
 }
 input[type="date"]::-webkit-calendar-picker-indicator {
-    font-size: 24px; /* Adjust size as needed */
-    padding: 5px; /* Adjust padding as needed */
+    font-size: 24px; 
+    padding: 5px; 
 }
 
 
-/* Your other Sass styles */
 
-/* Hide the default dropdown arrow */
-/* Hide the default dropdown arrow */
-/* Hide the default dropdown arrow */
-/* Hide the default dropdown arrow */
 .form-select.lg-3 {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     background-color: transparent;
-    background-image: url('./img/icons8-dropdown-64b.png'); /* URL of the custom arrow image */
-    background-repeat: no-repeat;
-    background-position: right 10px center; /* Adjust position as needed */
-    padding-right: 40px; /* Adjust padding to fit the icon */
-    font-size: 16px; /* Adjust font size as needed */
-    width: 100%; /* Adjust width as needed */
-    color: #000000; /* Set text color */
-    background-size: 25px; /* Adjust the size of the background image */
+    background-image: url('./img/icons8-dropdown-64b.png'); 
+    background-position: right 10px center; 
+    padding-right: 40px; 
+    font-size: 16px; 
+    width: 100%; 
+    color: #000000; 
+    background-size: 25px; 
 }
 
-/* Adjust the position of the custom icon */
-/* .form-select.lg-3::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: 10px; 
-    transform: translateY(-50%);
-    width: 30px; 
-    height: 30px; 
-     background-image: url('https://img.icons8.com/ios-glyphs/60/000000/expand-arrow--v1.png'); 
-    background-repeat: no-repeat;
-    background-position: center; 
-} */
+
 .form-select.lg-4{
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     background-color: transparent;
-    background-image: url('./img/icons8-dropdown-64.png'); /* URL of the custom arrow image */
+    background-image: url('./img/icons8-dropdown-64.png'); 
     background-repeat: no-repeat;
-    background-position: right 10px center; /* Adjust position as needed */
-    padding-right: 40px; /* Adjust padding to fit the icon */
-    font-size: 16px; /* Adjust font size as needed */
-    width: 100%; /* Adjust width as needed */
-    color: #000000; /* Set text color */
-    background-size: 25px; /* Adjust the size of the background image */
+    background-position: right 10px center; 
+    padding-right: 40px; 
+    font-size: 16px; 
+    width: 100%; 
+    color: #000000; 
+    background-size: 25px; 
 }
 
-/* Adjust the position of the custom icon */
-/* .form-select.lg-4::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: 10px; 
-    transform: translateY(-50%);
-    width: 30px; 
-    height: 30px; 
-    background-image: url('https://img.icons8.com/ios-glyphs/60/000000/expand-arrow--v1.png'); 
-    background-repeat: no-repeat;
-    background-position: center; 
-} */
+
 .form-check-label {
     font-size: 18px;
-    font-weight: 600; /* Adjust the font size as needed */
+    font-weight: 600; 
 }
 
 #custom-select-width {
-    width: 500px; /* Adjust the width as per your design needs */
+    width: 500px; 
 }
 
 .date-wrapper {
@@ -339,7 +351,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .basicbox {
     font-size: 18px;
-    padding-right: 40px; /* Make space for the icon */
+    padding-right: 40px; 
 }
 
 .calendar-icon {
@@ -357,7 +369,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 
 
-/* Adjust the size and position of the custom icon */
+
 
 
 
